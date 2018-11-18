@@ -99,3 +99,47 @@ question: |
   If there is no number in between the two numbers (e.g. in case the user enters `4` and `4` or `4` and `5`), print `Better luck next time`.
 code: |
   # your code goes here.
+
+---
+type: testless-coding-question
+id: 638f9609-b80d-48dd-bb3d-5cd400bae83e
+question: |
+  Ask the user to enter two numbers. Print all even numbers that fall between these two numbers. For example, if the user enters `4` and `9` (or `9` and `4`), the program prints `6` and `8`.
+code: |
+  # your code goes here
+
+---
+type: testless-coding-question
+id: f15d8ba9-d324-4505-aa2f-d925aca4aad7
+question: |
+  Ask the user to enter a number. Print whether that number is a prime number or not. For example:
+
+  ```
+  Enter a number: 7
+  7 is a prime number!
+  ```
+
+  ```
+  Enter a number: 8
+  8 is divisible by 2. Not a prime!
+  ```
+code: |
+  # your code goes here
+
+---
+type: testless-coding-question
+id: c2338e39-0e05-4896-a4f2-6e37beed74c5
+question: |
+  Ask the user to enter a number. Print all prime factors of that number. Reference: [prime factorization](https://www.mathsisfun.com/prime-factorization.html). Examples:
+
+  ```
+  Enter a number: 8
+  Prime factors are: 2 2 2
+  ```
+
+  ```
+  Enter a number: 12
+  Prime factors are: 2 2 3
+  ```
+code: |
+  # your code goes here
