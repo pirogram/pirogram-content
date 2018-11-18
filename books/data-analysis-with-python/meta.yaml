@@ -1,0 +1,12 @@
+title: Data Analysis with Python
+code: data-analysis-with-python
+description: |
+  `Numpy`, `Matplotlib` and `Pandas` are three foundational libraries for data analysis in Python. It's hard to think of a data analysis project that doesn't use these libraries. If you want to get started with data analysis using Python, there is no escape. You must develop comfort with this trifecta. After going through this book (and solving the exercises therein), you would:
+    * be able to pick any dataset and analyze it using Python
+    * be able to learn from the analysis others have done (e.g. on Kaggle)
+    * have a strong foundation to move on to machine learning related topics
+author:
+  code: vaishaligarg
+  name: Vaishali Garg
+  image: ""
+  linkedin: "https://www.linkedin.com/in/vaishali-garg-26b70b1a/"

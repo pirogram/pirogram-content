@@ -1,0 +1,12 @@
+title: Programming with Python
+code: programming-with-python
+description: |
+  The goal of this book is to get you started with programming (or get you started with Python if you already know programming). There are certain programming skills that are considered foundational. These skills get applied in pretty much all software applcations. And that exactly is the scope of this book. After going through this book (and having solved all exercises), you would:
+    * be comfortable with the whole concept of programming
+    * be able to write small applications for your amusement
+    * have a strong base to explore further areas in programming
+author:
+  code: manasgarg
+  name: Manas Garg
+  image: ""
+  linkedin: "https://www.linkedin.com/in/manasgarg/"

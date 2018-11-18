@@ -1,0 +1,4 @@
+code: numpy-indexing-slicing
+title: Indexing, Slicing and Iterating
+description: |
+  Basic and advanced methods of indexing and slicing Numpy arrays.
