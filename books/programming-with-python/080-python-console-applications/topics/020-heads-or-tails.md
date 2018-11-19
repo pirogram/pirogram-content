@@ -56,7 +56,7 @@ code: |
     zero_or_one = random.randint(0, 1)
     toss = choices[zero_or_one]
 
-    print('Tossed the coin and result is .. {toss}')
+    print(f'Tossed the coin and result is .. {toss}')
 
     if toss == guess:
       correct_guesses += 1

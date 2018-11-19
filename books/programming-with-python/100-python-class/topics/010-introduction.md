@@ -31,7 +31,7 @@ code: |
 
   Of course, Python itself comes with a lot of built-in `functions` and then, we could write some of our own. In fact, we did write quite a few `functions` on our way to the topic of `classes`.
 
-  While the `values` and the `operator` in these programs are visible, what's not apparent is the `type` of values. These values are of of `type` `int`. The `+` `operator` also takes values of `type` `str` and concatenates them:
+  While the `values` and the `operator` in these programs are visible, what's not apparent is the `type` of values. These values are of `type` `int`. The `+` `operator` also takes values of `type` `str` and concatenates them:
 ---
 type: live-code
 id: 7e570955-f627-4945-988b-72b6701b8d4b

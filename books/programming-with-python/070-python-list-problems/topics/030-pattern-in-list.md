@@ -81,7 +81,7 @@ question: |
 code: |
   # your code goes here
 tests: |
-  assert is_palindrome('xerox') == True
+  assert is_palindrome('xerox') == False
   assert is_palindrome('ana') == True
   assert is_palindrome('anna') == True
   assert is_palindrome('dog') == False
