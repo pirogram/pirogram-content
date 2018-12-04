@@ -16,7 +16,7 @@ code: |
 --- |
   Another way of plotting multiple sets of data on the same axes is by calling [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html) multiple times but display the plot using plt.show at the end. Since pyplot works on the `current axes`, multiple calls to the plot method will keep plotting different sets of data on the same axes. In simple terms, `we are creating multiple plots but on the same axes and hence the points are overlaid`.
 
-  Eg: Plot of sepal length vs sepal width from iris dataset with different color formatting by species (setosa, versicolor, verginica).
+  Eg: Plot of sepal length vs sepal width with different color formatting by species (setosa, versicolor, verginica).
 ---
 type: live-code
 id: 22baa271-64d8-4d28-acb1-10fd9a67c424
@@ -35,9 +35,9 @@ code: |
   plt.figure()
   # Plot data corresponding to Setosa
   plt.plot(X_setosa, y_setosa, 'bo')
-  # Add Versicolor. If you comment out the plot commands below, you will only see Setosa.
+  # Plot Versicolor. If you comment out the plot commands below, you will only see Setosa.
   plt.plot(X_versicolor, y_versicolor, 'ro')
-  # Add Verginica. If you comment out the plot command below, you will only see Setosa and Versicolor.
+  # Plot Verginica. If you comment out the plot command below, you will only see Setosa and Versicolor.
   plt.plot(X_virginica, y_virginica, 'go')
 
   plt.show()
