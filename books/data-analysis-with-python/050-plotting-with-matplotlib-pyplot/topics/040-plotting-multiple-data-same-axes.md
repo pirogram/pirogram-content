@@ -14,54 +14,9 @@ code: |
   plt.plot(x, x, 'bo', x, y, 'r*', x, z, 'g^')
   plt.show()
 --- |
-  Another way of plotting multiple sets of data on the same axes is by calling [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html) multiple times but display the plot using plt.show after all the data is passed to plt.plot. Since pyplot works on the `current axes`, multiple calls to the plot method will keep plotting different sets of data on the same axes.
+  Another way of plotting multiple sets of data on the same axes is by calling [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html) multiple times but display the plot using plt.show at the end. Since pyplot works on the `current axes`, multiple calls to the plot method will keep plotting different sets of data on the same axes. In simple terms, `we are creating multiple plots but on the same axes and hence the points are overlaid`.
 
-  Eg: Plot of sepal length vs sepal width from iris dataset with different color formatting by species (setosa, versicolor, verginica). Lets start by plotting rows corresponding to `setosa` and include versicolor and verginica later.
----
-type: live-code
-id: 4fa93a59-4863-467f-974c-ec497a652f49
-code: |
-  import numpy as np
-  import pandas as pd
-  import matplotlib.pyplot as plt
-  iris = pd.read_csv('data/iris.csv')
-
-  X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
-  y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
-  X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
-  y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
-  X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
-  y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
-
-  plt.figure()
-  plt.plot(X_setosa, y_setosa, 'bo')
-  plt.show()
----
-type: live-code
-id: f7bde5ea-836e-4f82-82ec-36d021f722b2
-code: |
-  import numpy as np
-  import pandas as pd
-  import matplotlib.pyplot as plt
-  iris = pd.read_csv('data/iris.csv')
-
-  X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
-  y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
-  X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
-  y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
-  X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
-  y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
-
-  plt.figure()
-  plt.plot(X_setosa, y_setosa, 'bo')
-  plt.plot(X_versicolor, y_versicolor, 'ro')
-  plt.show()
---- |
-  Here is the final plot with all the data points.
+  Eg: Plot of sepal length vs sepal width from iris dataset with different color formatting by species (setosa, versicolor, verginica). 
 ---
 type: live-code
 id: 22baa271-64d8-4d28-acb1-10fd9a67c424
