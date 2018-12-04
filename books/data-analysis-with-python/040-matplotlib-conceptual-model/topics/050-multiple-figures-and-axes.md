@@ -35,7 +35,7 @@ code: |
 --- |
   The most prefered method to add axes is [add_subplot](https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.add_subplot) as matplotlib takes care of the exact positioning.
 
-  The calling signature of  add_subplot is either a `3-digit integer` or three separate integers describing the position of the subplot. If the three integers are `nrows`, `ncols`, and `index` in order, the subplot will take the index position on a grid with nrows rows and ncols columns. Index starts at 1 in the upper left corner and increases to the right. `221` denotes first subplot of the total 4 subplots arranged in 2 rows and 2 columns. `111` represents the single subplot.
+  The calling signature of  add_subplot is either a `3-digit integer` or three separate integers (`nrows`, `ncols`, and `index`) describing the position of the subplot. Number of subplots equals the product of nrows and ncols. Index starts at 1 in the upper left corner and increases to the right. Eg: `221` denotes first subplot of the total 4 subplots arranged in 2 rows and 2 columns. `111` represents the single subplot.
 ---
 type: live-code
 id: f07234b4-8987-4fb7-92f3-cc3768951389
@@ -48,7 +48,9 @@ code: |
   ax4 = fig.add_subplot(224)
   plt.show()
 --- |
-  A plot with single axes can be created using [matplotlib.pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html) which creates a figure with 1 subplot by default(nrows=1, ncols=1). At the default setting, it gives similar output as plt.plot(). The main reason for using pyplot subplots() would be to `create a figure and a set of subplots`. A figure with more subplots can be created by specifying the number of `rows` and `columns` in the subplot grid. Here ax is a 2-D numpy array of shape (nrows, ncols) and we can plot data on a particular axes using ax[row inex, col index].
+  A plot with single axes can be created using [matplotlib.pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html) which creates a figure with 1 subplot by default(nrows=1, ncols=1). At the default setting, it gives similar output as plt.plot().
+
+  The main reason for using pyplot subplots() would be to `create a figure and a set of subplots`. A figure with more subplots can be created by specifying the number of `rows` and `columns` in the subplot grid. Here ax is a 2-D numpy array of shape (nrows, ncols) and we can plot data on a particular axes using ax[row inex, col index].
 ---
 type: live-code
 id: e7bd45cb-e346-4d54-a1d2-9ee9f3e46aa5
