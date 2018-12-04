@@ -1,10 +1,13 @@
 title: Multiple figure and axes
 --- |
-  [matplotlib.axes.Axes](https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes) contains most of the figure elements like Axis, Tick, Line2D, Text, Polygon, etc., and sets the coordinate system. Axes allow placement of plots at any location in the figure, eg: a smaller plot overlaid on a bigger one.
+  [matplotlib.axes.Axes](https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes) contains most of the figure elements and allows placement of plots at any location in the figure, eg: a smaller plot overlaid on a bigger one.
 
   There are various ways of creating a matplotlib figure with multiple axes.
+
   * add_axes(rect): rect is a list with the `dimensions` [left, bottom, width, height] of the new axes. All quantities are in fractions of figure width and height. This allows greater control over the figure with precisely placed axes including overlapping axes.
-  * add_subplot(nrows, ncols, index): `3-digit integer` or three separate integers describing the position of the subplot. `111` represents the single subplot. Matplotlib takes care of the exact positioning of the subplots making it convenient but with less control compared to add_axis.
+
+  * add_subplot(nrows, ncols, index): `3-digit integer` or three separate integers describing the position of the subplot. `111` represents the single subplot. Matplotlib takes care of the exact positioning of the subplots making it convenient but with less control compared to add_axes.
+
   * pyplot.subplots(nrows, ncols): `Create a figure and a set of subplots` in a single call. It returns a figure and an axes. The axes would be a single Axes object in case of default setting (nrows = 1, ncols = 1) or an array of Axes objects if more than one subplot was created. Incase of multiple axes, we plot data on a particular axes using ax[row index, col index].
 ---
 type: live-code
@@ -60,7 +63,7 @@ question: |
   Create a matplotlib figure and add an inset axes at the top-right corner of another axes. Hint: The main axes will cover the entire figure whereas the inset axes should be created using add_axes(rect). The resulting figure with axes should look like this:
   ![Matplotlib Figure with inset axes](assets/img/axes_inset.png)
 code: |
-  # Your code goes here. 
+  # Your code goes here.
 
 ---
 type: testless-coding-question
