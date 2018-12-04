@@ -41,7 +41,7 @@ code: |
   ax.plot(x, y , linewidth = 3)
   plt.show()
 --- |
-  Let us change the color and linestyle of the above plot using the parameters we discussed.
+  Let us change the `color` and `linestyle` of the above plot using the parameters we discussed.
 ---
 type: live-code
 id: 3d7d8a57-16d8-4de4-b922-0df45acf9d49
