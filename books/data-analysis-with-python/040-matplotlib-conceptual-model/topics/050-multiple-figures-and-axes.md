@@ -4,11 +4,11 @@ title: Multiple figure and axes
 
   There are various ways of creating a matplotlib figure with multiple axes.
 
-  * add_axes(rect): rect is a list with the `dimensions` [left, bottom, width, height] of the new axes. All quantities are in fractions of figure width and height. This allows greater control over the figure with precisely placed axes including overlapping axes.
+  * add_axes(rect): rect is a list with the `dimensions` [left, bottom, width, height] of the new axes. All quantities are in fractions of figure width and height.
 
-  * add_subplot(nrows, ncols, index): `3-digit integer` or three separate integers describing the position of the subplot. `111` represents the single subplot. Matplotlib takes care of the exact positioning of the subplots making it convenient but with less control compared to add_axes.
+  * add_subplot(nrows, ncols, index): `3-digit integer` or three separate integers describing the position of the subplot.
 
-  * pyplot.subplots(nrows, ncols): `Create a figure and a set of subplots` in a single call. It returns a figure and an axes. The axes would be a single Axes object in case of default setting (nrows = 1, ncols = 1) or an array of Axes objects if more than one subplot was created. Incase of multiple axes, we plot data on a particular axes using ax[row index, col index].
+  * pyplot.subplots(nrows, ncols): `Create a figure and a set of subplots` in a single call. It returns a figure and an axes.
 ---
 type: live-code
 id: bb82999e-4b97-4362-9532-660758a40c6b
