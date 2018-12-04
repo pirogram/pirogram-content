@@ -71,7 +71,7 @@ code: |
 type: testless-coding-question
 id: 83d3b137-e60c-4be6-a6dd-8f36e015fcd7
 question: |
-  Create a matplotlib figure of size (10,5) and use `object oriented` interfact to add subplots such that the resulting figure has total 6 subplots arranged in 3 rows and 2 columns.
+  Create a matplotlib figure of size (10,5) and use `object oriented` interface to add subplots such that the resulting figure has total 6 subplots arranged in 2 rows and 3 columns.
 code: |
   # Your code goes here
 ---

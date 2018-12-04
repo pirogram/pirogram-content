@@ -1,12 +1,12 @@
 title: Simple plot with Pyplot
 --- |
-  This section is about how to use [matplotlib.pyplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html) to create various plots and customize them. We obviously need to start by importing the module.
+  This section is about how to use [matplotlib.pyplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html) to create various plots and customize them.
 
-  Maplotlib supports different data types like `python lists`, `numpy arrays` as well as a `pandas series` as data sources but internally all the sequences are converted to numpy arrays. We will make generous use of numpy for array creation and Pandas for reading, slicing and grouping data and in this module. If you are unfamiliar with Numpy, we highly recommend that you first check out our book on [Numpy array basics](). Lets create our first plot using [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot) from numpy arrays `x` and `y`.
+  Maplotlib supports different data types like `python lists`, `numpy arrays` as well as a `pandas series` as data sources but internally all the sequences are converted to numpy arrays. We will make generous use of numpy for array creation and Pandas for reading, slicing and grouping data. If you are unfamiliar with Numpy, we highly recommend that you first check out our book on [Numpy array basics](). Lets create our first plot using [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot) from numpy arrays.
 
   When pyplot plot command is called without any formatting parameters, pyplot uses the following defaults:
-  * Figure size: 6.4X4.8 inches
-  * Plot style: is solid line
+  * Figure size: 6.4 X 4.8 inches
+  * Plot style: solid line
   * Linewidth: 1.5
   * Color: Blue (code 'b', hex code: '#1f77b4')
 

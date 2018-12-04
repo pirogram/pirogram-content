@@ -6,7 +6,8 @@ title: Customizing plots
 
   ### Format Color, style and markers
   The pyplot plot command incorporates various optional parameters to conveniently define basic formatting like `color`, `marker` and `linestyle`.
-  The following color abbreviations are supported:
+
+  The following **color** abbreviations are supported:
   * 'b'	blue
   * 'g'	green
   * 'r'	red
@@ -15,16 +16,17 @@ title: Customizing plots
   * 'y'	yellow
   * 'k'	black
   * 'w'	white   
+
   Besides the abbreviations, Matplotlib recognizes the formats like full name (eg: 'black') or hex strings ('#0F0F0F'). You can find the supported formats and full range of colors at [matplotlib.colors](https://matplotlib.org/api/colors_api.html#module-matplotlib.colors).
 
-  Marker is another optional formatting parameter with the default being None. You can take a look at all possible [matplotlib.markers] (https://matplotlib.org/api/markers_api.html#module-matplotlib.markers).
+  **Marker** is another optional formatting parameter with the default being None. You can take a look at all possible [matplotlib.markers](https://matplotlib.org/api/markers_api.html#module-matplotlib.markers).
 
-  Linestyle is the third optional formatting parameter with the default being solid line ('-'). Here is the [linestyle reference](https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html#line-style-reference).
+  **Linestyle** is the third optional formatting parameter with the default being solid line. Here is the [linestyle reference](https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html#line-style-reference).
 
   ### Linewidth
   Another line property that we can control is linewidth. The default line width is 1.5 points.
 
-  Lets start by creating a figure of size (8,4) and plot with linewidth set to 5.
+  Lets start by creating a figure of size (8,4) and linewidth set to 5.
 ---
 type: live-code
 id: b0a079fa-5f36-4d42-bac3-9d4d9cd8f3bc
