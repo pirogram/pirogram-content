@@ -51,13 +51,10 @@ code: |
 
   X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
   y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
   X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
   y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
   X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
   y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
-
 
   fig, ax = plt.subplots()
   ax.plot(X_setosa, y_setosa, 'bo', label = 'Setosa')
@@ -65,7 +62,6 @@ code: |
   ax.plot(X_virginica, y_virginica, 'go', label = 'verginica')
 
   ax.set_title('Iris Sepal length vs Petal length')
-
   ax.set_xlabel('Sepal Length')
   ax.set_ylabel('Petal Length')
 
@@ -85,13 +81,10 @@ code: |
 
   X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
   y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
   X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
   y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
   X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
   y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
-
 
   fig, ax = plt.subplots()
   ax.plot(X_setosa, y_setosa, 'bo', label = 'Setosa')
@@ -99,7 +92,6 @@ code: |
   ax.plot(X_virginica, y_virginica, 'go', label = 'verginica')
 
   ax.set_title('Iris Sepal length vs Petal length')
-
   ax.set_xlabel('Sepal Length')
   ax.set_ylabel('Petal Length')
 

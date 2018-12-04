@@ -22,9 +22,6 @@ code: |
 type: live-code
 id: 8acc525b-9338-41c2-ab7f-ac66cfab300e
 code: |
-  type: live-code
-  id: 54f50c98-9718-405f-ba2e-485e47d2fa5a
-  code: |
   import numpy as np
   import matplotlib.pyplot as plt
   x = np.arange(-5, 6)
