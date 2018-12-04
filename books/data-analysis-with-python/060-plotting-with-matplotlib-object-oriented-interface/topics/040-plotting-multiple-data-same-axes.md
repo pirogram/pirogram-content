@@ -21,7 +21,9 @@ code: |
 
   plt.show()
 --- |
-  Another way to plot multiple sets of data on the same figure and axes is calling [Axes.plot](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib-axes-axes-plot) multiple times but display the plot using plt.show at the end. Multiple calls to the plot method will keep plotting different sets of data on the same axes. Lets plot sepal length vs sepal width in iris dataset but choose different color formatting by species (setosa, versicolor, verginica), we can create three sets of arrays corresponding to the species and plot them by calling Axes.plot thrice. Use different color and/or format for differentiating the data.
+  Another way to plot multiple sets of data on the same figure and axes is calling [Axes.plot](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.plot.html#matplotlib-axes-axes-plot) multiple times but display the plot using plt.show at the end. Multiple calls to the plot method will keep plotting different sets of data on the same axes.
+
+  Eg: Plot of sepal length vs sepal width with different color formatting by species (setosa, versicolor, verginica).
 ---
 type: live-code
 id: f97ded30-a494-4b13-af03-585b7693286e
@@ -33,10 +35,8 @@ code: |
 
   X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
   y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
   X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
   y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
   X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
   y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
 

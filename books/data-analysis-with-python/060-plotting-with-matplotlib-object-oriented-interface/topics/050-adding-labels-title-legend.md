@@ -1,6 +1,6 @@
 title: Adding labels, title and legend to plots
 --- |
-  The axes properties like X and Y axis labels, plot title and legend are controlled by [Axes setters & getters] (https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend). Lets look at them one by one.
+  The axes properties like X and Y axis labels, plot title and legend are controlled by [Axes setters & getters](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend). Lets look at them one by one.
   ### Set xlabel and ylabel
   [Axes.set_xlabel](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xlabel.html#matplotlib.axes.Axes.set_xlabel) and [Axes.set_ylabel](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_ylabel.html#matplotlib.axes.Axes.set_ylabel) are used to set X and Y axes labels respectively.
 ---
@@ -73,7 +73,7 @@ code: |
   ax.grid(True)
   plt.show()
 --- |
-  The Axes properties `label`, `title` and `legend` have corresponding `getters` which return the label and title as text strings and the legend instancey.
+  The Axes properties `label`, `title` and `legend` have corresponding `getters` which return the `label` and `title` as text strings and the `legend` instances.
 ---
 type: live-code
 id: 2ef8ad6f-4b65-4c32-bba5-9bc10907dea9
@@ -109,6 +109,6 @@ code: |
 
   print('X label: ', ax.get_xlabel())
   print('Y label: ', ax.get_ylabel())
-  print('Title: ', ax.get_title())
+  print('Title:  ', ax.get_title())
   print('Legend: ', ax.get_legend())
 ---

@@ -1,7 +1,7 @@
 title: Getting and Setting axis properties
 --- |
-### Axes limits
-  The limits of x and y axis are inferred by matplotlib based on the range data at X and Y axis. A convenient method to get or set axis properties is [Axes.axis](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html#matplotlib.axes.Axes.axis). It returns the axis limits in the order xmin, xmax, ymin, ymax. Either none or all of the limits must be given.
+  ### Axes limits
+  The `limits` of x and y axis are inferred by matplotlib based on the range data at X and Y axis. A convenient method to `get` or `set` axis properties is [Axes.axis](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.axis.html#matplotlib.axes.Axes.axis). It returns the axis limits in the order xmin, xmax, ymin, ymax. Either none or all of the limits must be given.
 ---  
 type: live-code
 id: 9171d585-f22d-4eef-873f-f24cd856fa94
@@ -17,14 +17,14 @@ code: |
   ax.axis([-1, 5, -1, 20])
   plt.show()
 --- |
-  You can get and set only x or y limits using [Axes.get_xlim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_xlim.html#matplotlib-axes-axes-get-xlim) or [Axes.set_xlim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xlim.html#matplotlib.axes.Axes.set_xlim) respectively. Conversely, use [Axes.get_ylim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_ylim.html#matplotlib-axes-axes-get-ylim) and [Axes.set_ylim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_ylim.html#matplotlib.axes.Axes.set_ylim) to get and set Y limits.
+  You can `get` and `set` only x or y limits using [Axes.get_xlim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_xlim.html#matplotlib-axes-axes-get-xlim) or [Axes.set_xlim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xlim.html#matplotlib.axes.Axes.set_xlim) respectively. Conversely, use [Axes.get_ylim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_ylim.html#matplotlib-axes-axes-get-ylim) and [Axes.set_ylim](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_ylim.html#matplotlib.axes.Axes.set_ylim) to `get` and `set` Y limits.
 ---
 type: live-code
 id: 8acc525b-9338-41c2-ab7f-ac66cfab300e
 code: |
   type: live-code
-id: 54f50c98-9718-405f-ba2e-485e47d2fa5a
-code: |
+  id: 54f50c98-9718-405f-ba2e-485e47d2fa5a
+  code: |
   import numpy as np
   import matplotlib.pyplot as plt
   x = np.arange(-5, 6)
