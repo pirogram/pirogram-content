@@ -67,7 +67,7 @@ code: |
   ax.plot(x, y, color = 'r', linestyle = '-.', linewidth = 2, marker = 'o', markersize=5)
   plt.show()
 --- |
-  Finally, the style parameters `color`, `marker` and `linestyle` can be combined in a `shortcut string notation` as shown in the example here. We will also add `figsize`, `markersize` and `linewidth` to the style parameters and add gridlines.
+  Finally, the style parameters `color`, `marker` and `linestyle` can be combined in a shortcut string notation as shown in the example here. We will also add `figsize`, `markersize` and `linewidth` to the style parameters and add `gridlines`.
 ---
 type: live-code
 id: 6fb3cae8-2594-4e46-946c-8341d48270ee
