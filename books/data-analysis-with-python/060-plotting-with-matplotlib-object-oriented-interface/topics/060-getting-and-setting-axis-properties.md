@@ -72,11 +72,11 @@ code: |
   print('Default xticks: ', ax.get_xticks())
   print('Default yticks: ', ax.get_yticks())
 
-  # Pass the data points a x and y ticks
+  # Set x and y arrays as ticks
   ax.set_xticks(x)
   ax.set_yticks(y)
 
-  # Set the ticklabels by passing
+  # Set the ticklabels
   ax.set_xticklabels(['zero', 'one', 'two', 'three', 'four'])
   ax.set_yticklabels(['zero', 'one', 'four', 'nine', 'twenty five'])
 
