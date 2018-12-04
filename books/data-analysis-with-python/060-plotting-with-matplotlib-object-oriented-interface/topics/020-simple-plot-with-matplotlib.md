@@ -1,8 +1,8 @@
 title: Simple Plot with Matplotlib
 --- |
-  Lets create a simple plot using  object oriented interface. We first create an instance of figure and axes in a single call using [matplotlib.pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots). The axes can be either a single Axes object or an array of Axes objects depending on the number of rows/columns specified during the subplots call.
+  Lets create a simple plot using  object oriented interface. We first create an instance of figure and axes in a single call using [pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots). The axes can be either a `single Axes object` or an `array of Axes objects` depending on the number of rows & columns specified during the subplots call.
 
-  The main difference from the pyplot interface is that we will plot on the specific `axes object` rather than relying pyplot to return the `current axes`.
+  The main difference from the pyplot interface is that we plot on the specific `axes object` rather than relying pyplot to return the `current axes`.
 
   Matplotlib uses the following default parameters to create the plot:
   * Figure size: 6.4 X 4.8 inches
@@ -24,7 +24,7 @@ code: |
   ax.plot(x, y)
   plt.show()
 --- |
-  If a single list or array is passed to the plot() command, matplotlib assumes it is a sequence of y values, and automatically generates the x values. When we pass the array y from the earlier plot to ax.plot, it creates a similar plot with one exception - matplotlib `infers` the X axis values starting from 0.
+  If a single list or array is passed to the plot() command, matplotlib assumes it is a sequence of `y values`, and automatically generates the x values. When we pass the array y from the earlier plot to ax.plot, it creates a similar plot with one exception - matplotlib `infers` the X axis values starting from 0.
 ---
 type: live-code
 id: 27eda68f-0968-444e-a9dd-743220da26c9

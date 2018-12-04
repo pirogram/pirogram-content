@@ -1,11 +1,12 @@
 title: Customizing Plots
 --- |
   ### Figure size
-  The default figure size is 6.4 X 4.8 inches. We change the figure size by passing a tuple of integers to the optional parameter figsize in [matplotlib.pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots).
+  The default figure size is 6.4 X 4.8 inches. Figure size can be changed by passing a tuple of integers to the optional parameter `figsize` in [pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots).
 
-  ### Format Color, style and markers
+  ### Color, style and markers
   Matplotlib supports various optional formatting parameters  like `color`, `marker` and `linestyle`.
-  The following color abbreviations are supported:
+
+  The following `color` abbreviations are supported:
   * 'b'	blue
   * 'g'	green
   * 'r'	red
@@ -14,11 +15,12 @@ title: Customizing Plots
   * 'y'	yellow
   * 'k'	black
   * 'w'	white   
+
   Besides the abbreviations, Matplotlib recognizes the formats like full name (eg: 'black') or hex strings ('#0F0F0F'). You can find the supported formats and full range of colors at [matplotlib.colors](https://matplotlib.org/api/colors_api.html#module-matplotlib.colors).
 
-  Marker is another optional formatting parameter with the default being None. You can take a look at all possible [matplotlib.markers] (https://matplotlib.org/api/markers_api.html#module-matplotlib.markers).
+  `Marker` is another optional formatting parameter with the default being None. You can take a look at all possible [matplotlib.markers] (https://matplotlib.org/api/markers_api.html#module-matplotlib.markers).
 
-  Linestyle is the third optional formatting parameter with the default being solid line ('-'). Here is the [linestyle reference](https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html#line-style-reference).
+  `Linestyle` is the third optional formatting parameter with the default being solid line ('-'). Here is the [linestyle reference](https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html#line-style-reference).
 
   ### Linewidth
   Another line property that we can control is linewidth. The default line width is 1.5 points.
@@ -33,13 +35,13 @@ id: 1d5f3f21-53ae-467e-8026-f92d152c8820
 code: |
   import matplotlib.pyplot as plt
   import numpy as np
-  x = np.arange(-10, 10, 0.1)
-  y = np.sin(x)
+  x = np.arange(-10, 11)
+  y = x ** 2
   fig, ax = plt.subplots(figsize = (9,5))
   ax.plot(x, y , linewidth = 3)
   plt.show()
 --- |
-Let us change the color and linestyle of the above plot using the parameters we discussed.
+  Let us change the color and linestyle of the above plot using the parameters we discussed.
 ---
 type: live-code
 id: 3d7d8a57-16d8-4de4-b922-0df45acf9d49
