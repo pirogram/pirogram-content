@@ -1,5 +1,5 @@
 title: Simple plot with Pyplot
----
+--- |
   This section is about how to use [matplotlib.pyplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html) to create various plots and customize them. We obviously need to start by importing the module.
 
   Maplotlib supports different data types like `python lists`, `numpy arrays` as well as a `pandas series` as data sources but internally all the sequences are converted to numpy arrays. We will make generous use of numpy for array creation and Pandas for reading, slicing and grouping data and in this module. If you are unfamiliar with Numpy, we highly recommend that you first check out our book on [Numpy array basics](). Lets create our first plot using [pyplot.plot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot) from numpy arrays `x` and `y`.

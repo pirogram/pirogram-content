@@ -13,7 +13,7 @@ code: |
   z = x ** 3
   plt.plot(x, x, 'bo', x, y, 'r*', x, z, 'g^')
   plt.show()
----
+--- |
   Another way to plot multiple sets of data on the same figure and axes is calling pyplot.plot multiple times but display the plot using plt.show after all the data is passed to plt.plot. Since pyplot works on the current axes, multiple calls to the plot method will keep plotting different sets of data on the same axes. Lets say we want to plot sepal length vs sepal width in iris dataset but choose different color formatting by species (setosa, versicolor, verginica), we can create three sets of arrays corresponding to the species and plot them by calling pyplot.plot thrice. Use different color and/or format for differentiating the data.
 ---
 type: live-code

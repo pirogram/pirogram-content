@@ -1,6 +1,6 @@
 title: Getting and Setting axis properties
 --- |
-### Axes limits
+  ### Axes limits
   The limits of x and y axis are inferred by matplotlib based on the range data at X and Y axis. A convenient method to get or set axis properties is [matplotlib.pyplot.axis](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.axis.html#matplotlib.pyplot.axis). Here is an example of getting the axis properties.
 ---  
 type: live-code
