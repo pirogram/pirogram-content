@@ -25,26 +25,20 @@ code: |
   import pandas as pd
   import matplotlib.pyplot as plt
   iris = pd.read_csv('data/iris.csv')
-
   X_setosa = iris.loc[iris['species'] == 'setosa','sepal_length']
   y_setosa = iris.loc[iris['species'] == 'setosa', 'petal_length']
-
   X_versicolor = iris.loc[iris['species'] == 'versicolor','sepal_length']
   y_versicolor = iris.loc[iris['species'] == 'versicolor', 'petal_length']
-
   X_virginica = iris.loc[iris['species'] == 'virginica','sepal_length']
   y_virginica = iris.loc[iris['species'] == 'virginica', 'petal_length']
 
   plt.figure()
-
   # Plot data corresponding to Setosa
   plt.plot(X_setosa, y_setosa, 'bo')
-
   # Add Versicolor. If you comment out the plot commands below, you will only see Setosa.
   plt.plot(X_versicolor, y_versicolor, 'ro')
-
   # Add Verginica. If you comment out the plot command below, you will only see Setosa and Versicolor.
   plt.plot(X_virginica, y_virginica, 'go')
-  
+
   plt.show()
 ---

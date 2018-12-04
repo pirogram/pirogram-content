@@ -1,11 +1,12 @@
 title: Simple Plot with Matplotlib
 --- |
-  Lets create a simple plot using  object oriented interface. We first create an instance of figure and axes in a single call using [matplotlib.pyplot.subplots] (https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots). The axes can be either a single Axes object or an array of Axes objects depending on the number of rows/columns specified during the subplots call.
-  The main difference from the pyplot interface is that we will plot on the specific `axes object` rather than relying pyplot to return the current axes.
+  Lets create a simple plot using  object oriented interface. We first create an instance of figure and axes in a single call using [matplotlib.pyplot.subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots). The axes can be either a single Axes object or an array of Axes objects depending on the number of rows/columns specified during the subplots call.
+
+  The main difference from the pyplot interface is that we will plot on the specific `axes object` rather than relying pyplot to return the `current axes`.
 
   Matplotlib uses the following default parameters to create the plot:
   * Figure size: 6.4 X 4.8 inches
-  * Plot style: is solid line
+  * Plot style: solid line
   * Linewidth: 1.5
   * Color: Blue (code 'b', hex code: '#1f77b4')
 
