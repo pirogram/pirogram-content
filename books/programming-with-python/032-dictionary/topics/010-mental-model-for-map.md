@@ -1,6 +1,6 @@
 title: Mental Model for Map
 --- |
-  While `list` is a very useful data structure and regardless of the information you have, you can always find a way to organize it in the form of a list, there are times when using a `list` is very cumbersome. You want alternative ways of organizing the information. `Map` is one of those ways. In fact, one can argue that it is as important as list is. Let's look at a few examples where organizing information as a `Map` is useful.
+  While `list` is a very useful data structure and regardless of the information you have, you can always find a way to organize it in the form of a list, there are times when using a `list` is very cumbersome. You want alternative ways of organizing the information. `Map` is that kind of information. Let's look at a few examples to understand what _map-lie_ information looks like.
 
   At Hogwarts, Dumbledore decided to measure the height of all students. He made the following observations:
 
