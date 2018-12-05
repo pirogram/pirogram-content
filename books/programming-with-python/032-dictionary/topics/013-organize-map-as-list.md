@@ -9,9 +9,9 @@ title: Organize Map as List
   | eggs | 18 |
   | apples | 6 |
 
-  If we want, we can still organize this information as a `list`. In fact, to convince ourselves that `list` indeed is a bad choice for this kind of information, let's try to use `list` and see how it goes.
+  This is _map-like_ information. The question is: how do you organize this information as a list? It does look a little _listy_ but there are nuances that we would need to deal with.
 
-  So, how do you store _map-like_ information in a list? One approach is to lay it out linearly with item name and the count alternating. For example, you could say:
+  One approach is to lay it out linearly with item name and the count alternating. For example, you could say:
 
 ---
 type: live-code
