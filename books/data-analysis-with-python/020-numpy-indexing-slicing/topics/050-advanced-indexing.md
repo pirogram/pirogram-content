@@ -11,7 +11,9 @@ code: |
   import numpy as np
   a = np.arange(8).reshape(4,2)
   # Return first element at row 0, second at row 1, first at row 2 and 3.
-  a[[0, 1, 2, 3], [0, 1, 0,0]]
+  print(a)
+  print('-' * 40)
+  print(a[[0, 1, 2, 3], [0, 1, 0,0]])
 --- |
   Arrays can also be indexed by passing a 2 - D array at each dimension.
 ---

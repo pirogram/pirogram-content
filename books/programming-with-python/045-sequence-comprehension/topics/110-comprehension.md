@@ -66,7 +66,7 @@ code: |
 
   sqrt_numbers = {n: math.sqrt(n) for n in numbers}
   sqrt_numbers
-  
+
 ---
 type: testless-coding-question
 id: 78a1bc64-52d9-4ce7-93a3-b1667d21c0be

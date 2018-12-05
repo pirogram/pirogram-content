@@ -75,7 +75,7 @@ question: |
   Select a slice of the following array using `steps` to return an array of positive numbers, exclude zero. Save to `a_pos`.
 code: |
   import numpy as np
-  a = np.array(25)
+  a = np.arange(25)
 tests: |
   assert np.array_equal(a_pos, [ 2,  4,  6,  8, 10, 12, 14, 16, 18, 20, 22, 24])
 ---

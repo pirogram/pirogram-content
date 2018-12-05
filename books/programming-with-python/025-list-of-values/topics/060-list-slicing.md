@@ -1,5 +1,20 @@
 title: List Slicing
 --- |
+
+  There are times when you would have a very long list. For example, think of all your emails. When you organize them in a list, it would run very long. It would be impractical to display all your emails on one page. That's why, the email clients show you 50 emails at a time and then you can step through previous 50 or next 50 emails.
+
+  In the world of lists, this concept is referred to as slicing. You have a long list (of emails) and you are taking a slice of 50 emails at a time to show to the users.
+
+  Slicing is a very useful concept and it shows up in solving many problems. Another example would be to think of a book as a list of letters. Each chapter of the book is a slice of the complete list. Each page is yet another slice from the list of letters of a chapter. A paragraph is yet another slice and so is a sentence. Every word can also be thought of as a slice.
+
+  Extracting a slice from the list looks very similar to extracting an item by position. Let's go back to the list of outcomes from tossing a coin 8 times:
+
+  ```python
+  toss_outcomes = ['H', 'H', 'T', 'H', 'T', 'T', 'T', 'H']
+  ```
+
+  If you want to know the outcome of 4th coin toss, you would use `toss_outcomes[3]`. If you want to create a slice of outcomes 4th to 7th, you would use `toss_outcomes[3:7]`. `[3:7]` means start at index `3` and stop right before index `7` (i.e. index `6`). Again, it can take some time to get comfortable with this and there are plenty of examples in this topic to develop familiarity.
+
   The following code snippets show some of the functionality related list slicing. Play around with it by changing various numbers in the slice and see how things change. Also try to use some invalid index numbers in the slice.
 
   What happens when you use `[:]` as slice? What happens when you put same number on either side of `:` e.g. `[4:4]`? What happens when you put two consecutive numbers e.g. `[4:5]`? Finally, what happens when you put bigger number first e.g. `[5:3]`?

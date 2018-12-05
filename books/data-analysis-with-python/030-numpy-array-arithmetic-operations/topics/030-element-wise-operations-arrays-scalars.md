@@ -23,7 +23,7 @@ code: |
 type: coding-question
 id: 91156df9-2079-44cc-95a9-9bab15d90f3e
 question: |
-  Here is a numpy array `n` of numbers from 1 to 10. Find the square of each element of n an return in the array `n_sqr`.
+  Here is a numpy array `n` of numbers from 1 to 10. Find the square of each element of `n` and return in the array `n_sqr`.
 code: |
   import numpy as np
   n = np.arange(1,11)
@@ -33,17 +33,17 @@ tests: |
 type: coding-question
 id: 6b4b2710-6260-44cb-b3b4-cc2de8cc0301
 question: |
-  For the given numpy array `celcius`, convert each value to fahrenheit and save to array `fahrenheit`. The formula for conversion is F = C * 9/5 + 32.
+  For the given numpy array `celsius`, convert each value to fahrenheit and save to array `fahrenheit`. The formula for conversion is F = C * 9/5 + 32.
 code: |
   import numpy as np
-  celcius = np.array([100, 0, 32, -32])
+  celsius = np.array([100, 0, 32, -32])
 tests: |
   assert np.array_equal(fahrenheit, [212. ,  32. ,  89.6, -25.6])
 ---
 type: coding-question
 id: 7558f9e7-11df-4380-a6a2-b780945bea22
 question: |
-  The arrays `oz` given below contain the weight in ounces. Convert them to weight in pounds and save to a new array `lb`. Remember, 1 pound = 16 ounces.
+  The arrays `oz` given below contains the weight in ounces. Convert them to weight in pounds and save to a new array `lb`. Remember, 1 pound = 16 ounces.
 code: |
   oz = np.array([16, 200, 256, 0, 1000])
 tests: |
