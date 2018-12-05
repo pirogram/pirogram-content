@@ -1,6 +1,6 @@
 title: List Operations
 --- |
-  Earlier, we looked at some of the operations that can be performed on a list. In this topic, we'll look at some more examples and put 
+  Earlier, we looked at some of the operations that can be performed on a list. In this topic, we'll look at some more examples and put our knowledge to some use.
 
 ---
 type: live-code

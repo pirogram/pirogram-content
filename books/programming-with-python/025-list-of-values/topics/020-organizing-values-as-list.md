@@ -9,7 +9,7 @@ code: |
 
   print(files)
 --- |
-  You create a list by surrounding the values with square brackets (`[]`). If you look at this code, we created a list with 4 file names and we assigned that list to the variable `files`. When we print `files`, we see that it shows up as a list of values.
+  In this example, we created a list of files. Each filename was separated by comma (`,`) and surrounded by `[]`. This is pretty much how you create a list. Take a bunch of values, separate them by comma, surround them by `[]` and you are done.
 
   If you think about it, a list is also a type of value. List is also called a data structure since it binds data (or values) in a structure. In this case, we took four individual values (`'students.xls'`, `'expenses.xls'`, `'lease.doc'` and `'todo.txt'`) and put them in a list structure. All this will become clearer as we go along.
 
@@ -22,7 +22,7 @@ code: |
 
   print(toss_outcomes)
 --- |
-  An important thing about coin toss is that there is a sense of _order_ within the outcomes. We do want to remember whether the 2nd toss gave us heads or tails. And as you would notice from the `print(toss_outcomes)` statement, the list preserves the order or values. It's a very important thing about lists.
+  An important thing about coin toss is that there is a sense of _order_ within the outcomes. We do want to remember whether the 2nd toss gave us heads or tails. And as you would notice from the `print(toss_outcomes)` statement, the list preserves the order of values. It's a very important thing about lists.
 
   A list can have values of different types. For example, here is a list that mixes up numbers and strings.
 

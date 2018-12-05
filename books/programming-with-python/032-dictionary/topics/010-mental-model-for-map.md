@@ -28,16 +28,17 @@ title: Mental Model for Map
   | eggs | 18 |
   | apples | 6 |
 
-  We can go on and on but hopefully, you got the idea of a `Dictionary`.
+  We can go on and on but hopefully, you got the idea of a `Map`.
 
-  A `Map` can be seen as a list of key-value pairs. Each `key` maps to a `value`. `'Harry'` maps to 90. Or `'Lord of the Rings'` maps to `'J R R Tolkien'`. Or `'eggs'` maps to `18`.
+  A `Map` can be seen as a list of key-value pairs. Each `key` maps to a `value`. `'Harry'` maps to `90`. Or `'Lord of the Rings'` maps to `'J R R Tolkien'`. Or `'eggs'` maps to `18`.
 
   What kind of things you can do with a `Map`? First, you can check whether a key is present or not (e.g. do we have `oranges` among our grocery items?).
 
-  We can also retrieve the value that a given maps to. For example, we can find out Ron's height. Or we can find out the author of _Lord of the Rings_.
+  We can also find the value that a key maps to. For example, we can find out Ron's height. Or we can find out the author of _Lord of the Rings_.
 
   We can also add more entries, remove entries or update existing entries in the `Map`.
 
+  ## Organizing Map-Like Information In a List
   Can you organize this kind of information as a list? Yes, you can. But as I mentioned earlier, it would be very cumbersome to work with a list in this case. To convince ourselves that `list` indeed is a bad choice for this kind of information, let's try to use `list` and see how it goes.
 
   So, how do you store such information in a list? One approach is to lay it out linearly with item name and their counts alternating. For example, you could say:
@@ -92,6 +93,7 @@ code: |
 
 --- |
 
+  ## More on Organizing Map-Like Information In a List
   While this was one way to organize grocery items in a list, this is not the only one. We can also take the approach of storing grocery items and their respective counts in two separate lists. For example:
 
 ---

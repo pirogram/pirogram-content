@@ -1,8 +1,8 @@
 title: List Indexing
 --- |
-  Now we come to a part that's very troublesome for new programmers i.e. list indexing. However, with some practice (and patience), we can easily master this concept.
+  Now we come to a part that's very troublesome for new programmers i.e. list indexing. However, with some practice (and patience), we can master this concept.
 
-  Since all items in a list are ordered, we can actually number them in a sequence. Let's look at the following list which represents the outcome of tossing a coin 8 times:
+  Since all items in a list maintain an order, we can number them in a sequence. Let's go back to the list where we recorded the outcome of tossing a coin 8 times:
 
   ```python
   toss_outcomes = ['H', 'H', 'T', 'H', 'T', 'T', 'T', 'H']
