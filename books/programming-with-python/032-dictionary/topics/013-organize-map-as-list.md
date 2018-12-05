@@ -9,9 +9,9 @@ title: Organize Map as List
   | eggs | 18 |
   | apples | 6 |
 
-  This is _map-like_ information. The question is: how do you organize this information as a list? It does look a little _listy_ but there are nuances that we would need to deal with.
+  This is _map-like_ information. The question is: how do we organize this information as a list? It does look a little _listy_ but there are nuances that we would need to deal with.
 
-  One approach is to lay it out linearly with item name and the count alternating. For example, you could say:
+  One approach is to lay it out linearly with item name and the count alternating. For example, we could say:
 
 ---
 type: live-code
@@ -78,7 +78,7 @@ code: |
 
 --- |
 
-  In this example, we put all the grocery items in one list and all the counts in another list. We just make sure that items and their counts are organized in the same order. For example, in the list `items`, `potatoes` is the first item (i.e. the item at index `0`). The count for `potatoes` is `20` and it is first in the `counts` list. Similarly, `eggs` is 3rd in `items` list and its count is 3rd in the `counts` list.
+  In this example, we put all the grocery items in one list and all the counts in another list. We just make sure that items and their counts are organized in the same order.
 
   Now, if we want to find out how many `eggs` we need to buy, we can approach it as follows:
 
