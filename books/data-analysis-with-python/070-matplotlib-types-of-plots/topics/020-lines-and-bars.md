@@ -38,7 +38,7 @@ code: |
   plt.bar(x, y, width=0.6)
 
   # Align xlim and xticks
-  plt.xlim(plt.xlim()[0] - 0.5, plt.xlim()[-1] + 0.5)
+  #plt.xlim(plt.xlim()[0] - 0.5, plt.xlim()[-1] + 0.5)
 
   # Set labels and title
   plt.xlabel('Movie Ratings')
