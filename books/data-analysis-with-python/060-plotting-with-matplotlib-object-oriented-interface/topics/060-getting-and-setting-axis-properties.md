@@ -55,8 +55,8 @@ code: |
   **Location**
   [Axes.get_xticks](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_xticks.html#matplotlib.axes.Axes.get_xticks) and [Axes.get_yticks](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_yticks.html#matplotlib.axes.Axes.get_yticks) return the x and y ticks as a list of locations. Whereas we can set the x and y ticks by passing a list of ticks to [Axes.set_xticks](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xticks.html#matplotlib.axes.Axes.set_xticks) and [Axes.set_yticks](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_yticks.html#matplotlib.axes.Axes.set_yticks).
 
- **Label**
- The x and y tick `labels` can be accessed using [get_xticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_xticklabels.html#matplotlib.axes.Axes.get_xticklabels), [Axes.get_yticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_yticklabels.html#matplotlib.axes.Axes.get_yticklabels) and set using [set_xticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xticklabels.html#matplotlib.axes.Axes.set_xticklabels), [Axes.set_yticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_yticklabels.html#matplotlib.axes.Axes.set_yticklabels).
+  **Label**
+  The x and y tick `labels` can be accessed using [get_xticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_xticklabels.html#matplotlib.axes.Axes.get_xticklabels), [Axes.get_yticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.get_yticklabels.html#matplotlib.axes.Axes.get_yticklabels) and `set` using [set_xticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_xticklabels.html#matplotlib.axes.Axes.set_xticklabels), [Axes.set_yticklabels](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.set_yticklabels.html#matplotlib.axes.Axes.set_yticklabels).
 ---
 type: live-code
 id: c7b79b65-9d11-4383-8653-784fc06ae0f8
