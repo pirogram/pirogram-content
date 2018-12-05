@@ -75,11 +75,11 @@ id: 2691bda9-143b-45f1-ba57-78107805b4cb
 question: |
   Find the product of the two dimensional arrays given below and save to `array_product`.
 code: |
-  import nunpy as np
+  import numpy as np
   a = np.arange(6).reshape(3,2)
   b = np.arange(0, 60 ,10).reshape(3,2)
 tests: |
-  assert np.array_product(array_sum, [[  0,  10], [ 40,  90], [160, 250]])
+  assert np.array_equal(array_product, [[  0,  10], [ 40,  90], [160, 250]])
 ---
   Operations like comparison between multiple Numpy arrays are applied element wise. They return an array of booleans.
 ---
@@ -94,7 +94,7 @@ code: |
 type: coding-question
 id: e13f68ac-90e7-4e8d-a000-72d570fbc8f4
 question: |
-  Check if the elements in a are greater than or equal to elements in b by position. Save the resulting array to `arr_compare`.
+  Check if the elements in `a` are greater than or equal to elements in `b` by position. Save the resulting array to `arr_compare`.
 code: |
   import numpy as np
   a = np.array([6, 2, 9, 12, 0])

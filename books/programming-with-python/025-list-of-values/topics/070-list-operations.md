@@ -1,6 +1,6 @@
 title: List Operations
 --- |
-  Here is a quick tour of various list methods that we would use in these exercises.
+  Earlier, we looked at some of the operations that can be performed on a list. In this topic, we'll look at some more examples and put 
 
 ---
 type: live-code
@@ -81,7 +81,7 @@ code: |
 
   # if you give it a fruit that's not on list, what happens?
   print('grape index:', fruits.index('grape'))
-  
+
 ---
 type: testless-coding-question
 id: d7b839b9-6796-4159-b448-8b2db7b56c41

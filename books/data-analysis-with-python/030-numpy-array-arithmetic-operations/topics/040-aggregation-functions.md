@@ -64,7 +64,7 @@ tests: |
 type: coding-question
 id: 66d90378-93bd-45fe-96cc-93bb5382436f
 question: |
-  For the array `a`, compute the 50th percentile along axis 0 and store the result to `a_50`. (Hint: look at np.percentile)
+  For the array `a`, compute the 50th percentile along axis 0 and store the result to `a_50`. Hint: look at [`np.percentile`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.percentile.html).
 code: |
   import numpy as np
   np.random.seed(5)
@@ -75,18 +75,18 @@ tests: |
 type: coding-question
 id: b4e220d3-a22c-4f62-9b85-bd2363bd0773
 question: |
-  Compute the standard deviation of all the elements on the array `a`, round the result to 2 decimals and save to `a_std`.
+  Compute the standard deviation of all the elements on the array `a`, round the result to 2 decimals and save to `a_std`. Hint: look at [`np.std()`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html) & [`np.round()`](https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.around.html).
 code: |
   import numpy as np
   np.random.seed(5)
   a = np.random.randint(0, 50, 24).reshape(4,6)
 tests: |
-  assert a_str == 14.69
+  assert a_std == 14.69
 ---
 type: coding-question
 id: 1f63a867-2aa0-4600-865e-509b1aa430eb
 question: |
-  Find the index of the minimum value in the array `a` and save to `a_min_loc`.
+  Find the index of the minimum value in the array `a` and save to `a_min_loc`. Hint: [`np.argmin()`](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.argmin.html).
 code: |
   import numpy as np
   np.random.seed(25)

@@ -1,4 +1,4 @@
-title: List Indexing
+title: More on List Indexing
 --- |
   The following code snippets show some of the basic functionality w.r.t. list indexing. Try changing the index numbers in the code to get a better feel. Also try some index numbers that are invalid (e.g. `100`) and see what happens.
 

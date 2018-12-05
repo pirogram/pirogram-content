@@ -8,7 +8,7 @@ type: live-code
 id: 3ee0fdcd-6fb1-4999-ae3a-4305dbdf31ed
 code: |
   import numpy as np
-  two_d_a = np.array([[1,2,3], [4,5,6]])
+  two_d_a = np.array([[1,2,3], [4,5,6], [7,8,9]])
   two_d_a[:2, :2]
 --- |
   The index based slicing can be combined with : which selects all the elements at the specified dimension.

@@ -1,0 +1,3 @@
+code: sequence-comprehension
+title: Sequence Comprehension
+description: This is syntactic sugar to iterate through all sequence-like values (e.g. lists, dicts, string etc) and transform them.

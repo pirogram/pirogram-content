@@ -9,7 +9,7 @@ id: 41926e29-8d11-44d1-921f-0e9803c99c65
 code: |
   import numpy as np
   a = np.array([1,2,3,4,5])
-  b = np.full(10, 5)
+  b = np.full(5, 5)
   np.add(a, b)
 --- |
   The arithmetic ufuncs work in case of array operations with scalars.
@@ -24,7 +24,7 @@ code: |
 type: coding-question
 id: f76b0d3e-aa52-4d0b-a26b-14dba66da1f9
 question: |
-    Find the floor division of array `a1` with array `a2` and store the result in `a_quotient`. Use the ufunc for floor division.
+    Find the floor division of array `a1` with array `a2` and store the result in `a_quotient`. Use the ufunc for floor division ([`np.floor_divide()`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.floor_divide.html)).
 code: |
   import numpy as np
   a1 = np.array([6, 2, 19, 31, 9])
@@ -35,7 +35,7 @@ tests: |
 type: coding-question
 id: 4dda9986-a12b-4af2-8831-e14cd23789aa
 question: |
-    Raise the elements in array `a1` to the power of `a2` using the ufunc and save the resulting array to `a_power`.
+    Raise the elements in array `a1` to the power of `a2` using the ufunc and save the resulting array to `a_power`. Hint: use [`np.power()`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.power.html).
 code: |
   import numpy as np
   a1 = np.array([1, 3, 5, 4, 2])
@@ -46,7 +46,7 @@ tests: |
 type: coding-question
 id: 89d15b4c-f4fe-4e7c-979a-7fdddbbe7043
 question: |
-  Calculate element wise remainder between arrays a and b. Save the result to `a_b_remainder`.
+  Calculate element wise remainder between arrays a and b. Save the result to `a_b_remainder`. Hint: use [`np.remainder()`](https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.remainder.html).
 code: |
   import numpy as np
   a = np.array([5, 10, 12, 15, 17])
@@ -62,14 +62,6 @@ code: |
   import numpy as np
   angles = np.array([0., 30., 45., 60., 90.])
   np.sin(angles)
----
-type: testless-coding-question
-id: f803a09f-d9a9-4d9a-97a0-6e1e59b05479
-question: |
-  Compute element wise inverse for the array `a`. Note that inverse cosine of -1 is pi and 1 is 0.
-code: |
-  import numpy as np
-  a = np.linspace(-1, 1, num = 5)
 --- |
   Here are some comparison functions.
 ---
@@ -98,7 +90,7 @@ tests: |
 type: coding-question
 id: 78112847-bfd1-4c38-8c54-3c9ef5f5f077
 question: |
-Round the array `a` to 2 decimals (Hint: look at np.round) and save the result to `a_round`.
+  Round the array `a` to 2 decimals (Hint: look at np.round) and save the result to `a_round`.
 code: |
   import numpy as np
   np.random.seed(1)

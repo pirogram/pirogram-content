@@ -125,21 +125,3 @@ question: |
   ```
 code: |
   # your code goes here
-
----
-type: testless-coding-question
-id: c2338e39-0e05-4896-a4f2-6e37beed74c5
-question: |
-  Ask the user to enter a number. Print all prime factors of that number. Reference: [prime factorization](https://www.mathsisfun.com/prime-factorization.html). Examples:
-
-  ```
-  Enter a number: 8
-  Prime factors are: 2 2 2
-  ```
-
-  ```
-  Enter a number: 12
-  Prime factors are: 2 2 3
-  ```
-code: |
-  # your code goes here
