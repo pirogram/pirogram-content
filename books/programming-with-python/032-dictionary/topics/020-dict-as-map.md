@@ -1,6 +1,6 @@
 title: Dict as Map
 --- |
-  `Map` is a concept. It's just a way of thinking. There are various data structures that can be used for organizing information as a `Map`. `dict` is one of them.
+  `Map` is a concept. It's just a way of thinking. There are various data structures that can be used to organize _map-like_ information. `dict` is one of them.
 
   So, how do you organize information in a `dict` data structure and how do you work with it? Let's go back to the Hogwarts example where Dumbledore is recording the height measurements for different students.
 
@@ -55,7 +55,7 @@ code: |
 
   print(books)
 --- |
-  We'll now work on convincing ourselves that `dict` is a better than `list` to organize a `Map` like information. For that, we'll look at various operations that we need to perform on a `Map` and see how they are better done with `dict` compared to a `list`. For that, we'll work with the Hogwarts students example.
+  We'll now work on convincing ourselves that `dict` is a better than `list` to organize _map-like_ information. For that, we'll look at various operations that we need to perform on _map-like_ information and see how they are better done with `dict` compared to a `list`. For that, we'll work with the Hogwarts students example.
 
   ## Membership Check
 
@@ -115,7 +115,7 @@ code: |
   grocery_items['potatoes']
 
 --- |
-  One important thing to note here is that mapping is one-way. You map _keys_ to _values_. So, you can index a dictionary by its key and retrieve the value but not the other way round. For example, if you say `grocery_items[20]`, it won't give you `'potatoes'`, it would give you an error because `20` is not a key in the dictionary. You can try it here:
+  One important thing to note here is that mapping is one-way. We map _keys_ to _values_. So, we can index a dictionary by its key and retrieve the value but not the other way round. For example, if we say `grocery_items[20]`, it won't give us `'potatoes'`, it would give us an error because `20` is not a key in the dictionary. You can try it here:
 
 ---
 type: live-code
@@ -128,9 +128,9 @@ code: |
 --- |
   ## Add/Remove/Update
 
-  We'll now look operations like adding a new entry, updating an existing entry or removing an entry from the dictionary. Here, by entry, we refer to a key-value pair.
+  We'll now look at operations like adding a new entry, updating an existing entry or removing an entry from the dictionary. Here, by entry, we refer to a key-value pair.
 
-  Let's go back to Hogwarts. Dumbledore decided to measure Neville's height as well and he came out to be at `95` cms. How does he add this new entry to existing dictionary?
+  Let's go back to Hogwarts. Dumbledore decided to measure Neville's height as well and he came out to be at `95` cms. How do we add this new entry to existing dictionary?
 ---
 type: live-code
 id: 0d6374f2-5621-45fd-aa4f-f0e698c8d2c6
@@ -141,7 +141,7 @@ code: |
 
   students
 --- |
-  It was as simple as assigning value `95` to the index `'Neville'`. You can also add `8 oranges` to grocery items in a similar way:
+  It was as simple as assigning value `95` to the key `'Neville'`. We can also add `8 oranges` to grocery items in a similar way:
 
 ---
 type: live-code
@@ -154,7 +154,7 @@ code: |
   grocery_items
 --- |
 
-  What if you want to update an existing entry? For example, Ron's height was measured incorrectly and you want to update it to `93` (from `92`).
+  What if we want to update an existing entry? For example, Ron's height was measured incorrectly and we want to update it to `93` (from `92`).
 
 ---
 type: live-code
@@ -166,7 +166,7 @@ code: |
 
   students
 --- |
-  When you assign a value to a key, if the key already exists, the value gets updated. Otherwise, a new key is added to the dictionary.
+  When we assign a value to a key, if the key already exists, the value gets updated. Otherwise, a new key is added to the dictionary.
 
   *Note:* _All keys in a dictionary are unique._ If you assign a value to an existing key, you'll overwrite the previous value.
 

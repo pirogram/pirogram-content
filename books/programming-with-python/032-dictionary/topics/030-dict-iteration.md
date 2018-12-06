@@ -11,7 +11,7 @@ title: Dict Iteration
   }
   ```
 
-  You can think three different lists here:
+  We can think of three different lists here:
   * *keys:* `['Harry', 'Hermione', 'Ron', 'Malfoy']`
   * *values:* `[90, 85, 92, 91]`
   * *items (or key-values):* `[('Harry', 90), ('Hermione', 85), ('Ron', 92), ('Malfoy', 91)]`
