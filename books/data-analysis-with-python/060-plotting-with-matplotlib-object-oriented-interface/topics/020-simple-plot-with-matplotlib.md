@@ -11,7 +11,6 @@ title: Simple Plot with Matplotlib
   * Color: Blue (code 'b', hex code: '#1f77b4')
 
   Do not forget to use `plt.show()` to display the figure.
-
 ---
 type: live-code
 id: a3d16472-9ac4-43a3-b13d-b8c33eac1bc2
