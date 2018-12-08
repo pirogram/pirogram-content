@@ -1,6 +1,6 @@
 title: Lines and Bars
 --- |
-  The default plotting style in matplotlib is a line graph and both axes.plot and pyplot.plot return a `line graph`. Line plots are most commonly used to plot continuous data, Timeseries plot is a common example.
+  The default plotting style in matplotlib is a line graph and both axes.plot and pyplot.plot return a `line graph`. Line plots are most commonly used to plot continuous data, `Timeseries` plot is a common example.
 ---
 type: live-code
 id: 6db1e8c5-7cfb-4bd4-b3d3-a47f6f97dee3
@@ -45,7 +45,6 @@ code: |
   plt.show()
 --- |
   To represent discreet value of multiple variables by a category, we create `grouped bar chart`. Here is a plot of `mean` values by species in iris dataset. We plot the `species` vs the `mean` for each variable on the `same axes` but move the `location` of `xtick` so that the bars do not overlap.
-  * Create grouped dataframe
   * Set the parameter barwidth to use in plot.
   * Create an array of X values (number of unique species in the dataset)
   * Plot X vs the variables in iris dataset, increment the X value by the barwidth at each call so that the bars align.

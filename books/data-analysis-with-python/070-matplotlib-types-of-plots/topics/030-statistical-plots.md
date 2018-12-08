@@ -1,6 +1,6 @@
 title: Statistical Plots
 --- |
-  The Statistical plots like boxplot, violinplot and histogram help with visualizing the `Statistical summary` and `distribution` of the data. Boxplot makes a `box` and `whisker`, the box extends from the lower to upper quartile values of the data, with a line at the median. The whiskers extend from the box to show the range of the data.
+  The Statistical plots like `boxplot`, `violinplot` and `histogram` help with visualizing the `Statistical summary` and `distribution` of the data. Boxplot makes a `box` and `whisker`, the box extends from the lower to upper quartile values of the data, with a line at the median. The whiskers extend from the box to show the range of the data.
 ---
 type: live-code
 id: ae8c4f5f-7e5c-4e4b-bed3-fd680bfb7fa7
@@ -30,31 +30,22 @@ code: |
   import matplotlib.pyplot as plt
   import pandas as pd
   import numpy as np
+  fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(figsize = (9,7))
 
-  fig = plt.figure(figsize = (9,7))
-
-  plt.subplot(221)
-  plt.hist(iris['sepal_length'].values)
-  plt.xlabel('Sepal Length in cm')
-  plt.ylabel('Frequency')
-
+  ax1.hist(iris['sepal_length'].values)
+  ax1.xlabel('Sepal Length in cm')
+  ax1.ylabel('Frequency')
 
   fig.suptitle('Histogram of numeric columns of iris dataset')
-  plt.subplot(222)
-  plt.hist(iris['sepal_width'].values)
-  plt.xlabel('Sepal Width in cm')
+  ax2.hist(iris['sepal_width'].values)
+  ax2.xlabel('Sepal Width in cm')
 
-  plt.subplot(223)
-  plt.hist(iris['petal_length'].values)
-  plt.xlabel('Petal Length in cm')
-  plt.ylabel('Frequency')
+  ax3.hist(iris['petal_length'].values)
+  ax3.xlabel('Petal Length in cm')
+  ax3.ylabel('Frequency')
 
-
-  plt.subplot(224)
-  plt.hist(iris['petal_width'].values)
-  plt.xlabel('Petal Width in cm')
-
-
+  ax4.hist(iris['petal_width'].values)
+  ax4.xlabel('Petal Width in cm')
   plt.show()
 --- |
   Violin plots are similar to box plots but they add useful information such as the `distribution` of the data. Box plots show data points outside 1.5 * the inter-quartile range (IQR) as outliers above or below the whiskers whereas violin plots show the `whole range` of the data.
