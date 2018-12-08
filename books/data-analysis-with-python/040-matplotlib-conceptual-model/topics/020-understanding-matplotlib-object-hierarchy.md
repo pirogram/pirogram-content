@@ -1,6 +1,6 @@
 title: Understanding Matplotlib object hierarchy
 --- |
-  Matplotlib plot is created using a hierarchy of python objects. Lets look at the hierarchy to understand the terms like figure, axes that we used in the introduction. Here is a diagram of matplotlib hierarchy with every component.
+  Matplotlib plot is created using a hierarchy of python objects. Lets look at the hierarchy to understand the terms like figure, axes that we used in the introduction. Here is a diagram of matplotlib hierarchy with every component. Image source https://matplotlib.org/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py. 
 
   ![Matplotlib Anatomy](assets/img/matplotlib_anatomy.png)
 

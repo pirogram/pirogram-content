@@ -1,6 +1,6 @@
 title: Lines and Bars
 --- |
-  The default plotting style in matplotlib is a line graph and both axes.plot and pyplot.plot return a `line graph`. Line plots are most commonly used to plot continuous data, Timeseries plot is a common example.
+  The default plotting style in matplotlib is a line graph and both axes.plot and pyplot.plot return a `line graph`. Line plots are most commonly used to plot continuous data, `Timeseries` plot is a common example.
 ---
 type: live-code
 id: 6db1e8c5-7cfb-4bd4-b3d3-a47f6f97dee3
@@ -8,17 +8,21 @@ code: |
   import matplotlib.pyplot as plt
   import numpy as np
   import pandas as pd
+
   today = np.datetime64('today')
+  # Create an array of dates over last 100 days
   dates = pd.date_range(end = today, periods=100)
+  # Create an array of random numbers
   values = np.random.randn(100)
-  fig = plt.figure(figsize = (10,5))
-  plt.plot(dates, values)
-  plt.title('line plot')
-  plt.xlabel('Dates')
-  plt.ylabel('Values')
+
+  fig, ax = plt.subplots(figsize = (10,5))
+  ax.plot(dates, values)
+  ax.set_title('line plot')
+  ax.set_xlabel('Dates')
+  ax.set_ylabel('Values')
   plt.show()
 --- |
-  Bar graphs are used more commonly to represent discreet values. Here is a bar graph of count of movies by ratings in year 2016 from `imdb` dataset.
+  Bar graphs are used more commonly to represent discreet values. Here is a bar graph of `count` of movies by `ratings` in year 2016 from [Imdb dataset](/data/movie_metadata.csv).
 ---
 type: live-code
 id: 3bf2211f-0b1e-438c-8c09-98554805553d
@@ -31,23 +35,21 @@ code: |
 
   # Find count of movies by ratings and store in x and y values.
   movie_ratings_2016 = imdb[imdb.title_year == 2016].content_rating.value_counts()
-  x = movie_ratings_2016.index
-  y = movie_ratings_2016.values
-
   # Create bar graph of width 0.6.
-  plt.bar(x, y, width=0.6)
-
-  # Align xlim and xticks
-  plt.xlim(plt.xlim()[0] - 0.5, plt.xlim()[-1] + 0.5)
+  plt.bar(movie_ratings_2016.index, movie_ratings_2016, width=0.6)
 
   # Set labels and title
   plt.xlabel('Movie Ratings')
   plt.ylabel('Count')
   plt.title('Count of movies with different ratings in 2016')
-
   plt.show()
 --- |
-  Bar graphs can be created with grouped bars on each xlabel. Here is a grouped Bar chart of `mean` values by species in `iris` dataset.
+  To represent discreet value of multiple variables by a category, we create `grouped bar chart`. Here is a plot of `mean` values by species in iris dataset. We plot the `species` vs the `mean` for each variable on the `same axes` but move the `location` of `xtick` so that the bars do not overlap.
+  * Set the parameter barwidth to use in plot.
+  * Create an array of X values (number of unique species in the dataset)
+  * Plot X vs the variables in iris dataset, increment the X value by the barwidth at each call so that the bars align.
+  * Set xticks location to the array of X values.
+  * Set xticks labels to names of the species.
 ---
 type: live-code
 id: a7023926-b4ff-4cea-a7bb-96976bf1cd1a
@@ -57,13 +59,11 @@ code: |
   import pandas as pd
 
   iris = pd.read_csv('data/iris.csv')
-
   # Find mean values by species
   iris_mean = iris.groupby('species').mean()
 
   # Create figure, axes
   fig, ax = plt.subplots(figsize = (8,5))
-
   # Set bar width
   bar_width = 0.20
   index = np.arange(iris_mean.index.nunique())
@@ -84,7 +84,7 @@ code: |
 
   plt.show()
 --- |
-  Grouped bars can be stacked using the parameter bottom to ensure that the next bar in the group is stacked on the top of the previous in the same group.
+  Grouped bars can be `stacked` using the parameter `bottom` to ensure that the next bar in the group is stacked on the top of the previous in the same group.
 ---
 type: live-code
 id: db335ba2-ada3-43fe-b884-42e135cb86d6
@@ -94,13 +94,11 @@ code: |
   import pandas as pd
 
   iris = pd.read_csv('data/iris.csv')
-
   # Find mean values by species
   iris_mean = iris.groupby('species').mean()
 
   # Create figure, axes
   fig, ax = plt.subplots(figsize = (9,5))
-
   # Set bar width
   bar_width = 0.3
   index = np.arange(iris_mean.index.nunique() )
@@ -110,7 +108,7 @@ code: |
   petal_length = iris_mean['petal_length'].values
   petal_width = iris_mean['petal_width'].values
 
-  # Call bar() with parameter bottom to ensure stacked bars.
+  # Call bar() with parameter `bottom` to set the bottom of the bar at the top of previous bar.
   ax.bar(index + 0.1, sepal_length, bar_width,label = 'sepal length')
   ax.bar(index + 0.1, sepal_width, bar_width,label = 'sepal width', bottom = sepal_length)
   ax.bar(index + 0.1, petal_length, bar_width,label = 'petal length', bottom = sepal_length + sepal_width)
@@ -123,6 +121,34 @@ code: |
   ax.set_xticklabels(iris_mean.index.tolist())
   ax.set_ylabel('Mean')
   ax.legend()
-
   plt.show()
+---
+type: testless-coding-question
+id: ad76e7eb-c7dd-43be-ad55-3fa0d9d8fad8
+question: |
+  Create a line graph of the stock price of `Apple` and `Facebook` from the `timeseries` dataframe given below. Add a legend to indicate each ticker with a distinct color. The figure should looks like this:
+  ![Lineplot](assets/img/lineplot.png)
+code: |
+  import matplotlib.pyplot as plt
+  import numpy as np
+  import pandas as pd
+
+  ts = pd.read_csv('data/timeseries.csv')
+  # Your code goes here.
+---
+type: testless-coding-question
+id: d7fe319f-57d6-4c9d-ae21-6ecb4f00e443
+question: |
+  Create a barchart of stock price of Facebook vs apple in the year 2017. The filtered dataframe is created using the code below. The chart should look like this:
+  ![Barchart](assets/img/stocks_barchart.png)
+code: |
+  import numpy as np
+  import pandas as pd
+  import matplotlib.pyplot as plot
+
+  ts.index = pd.to_datetime(ts.index)
+  ts = ts[ts.index.year == 2017]
+  ts_2017 = ts.groupby([ts.index.year.rename('year'),ts.index.month.rename('month')])['AAPL', 'FB'].last()
+  ts_2017.index = ts_2017.index.droplevel(0)
+  # Your code goes here
 ---
