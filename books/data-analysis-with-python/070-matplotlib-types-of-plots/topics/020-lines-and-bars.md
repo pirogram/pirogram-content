@@ -128,10 +128,10 @@ id: ad76e7eb-c7dd-43be-ad55-3fa0d9d8fad8
 question: |
   Create a line graph of the stock price of `Apple`, `Facebook` and `Microsoft` from the `timeseries` dataframe given below. Add a legend to indicate each ticker with a distinct color.
 code: |
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
+  import matplotlib.pyplot as plt
+  import numpy as np
+  import pandas as pd
 
-ts = pd.read_csv('data/timeseries.csv')
-# Your code goes here.
+  ts = pd.read_csv('data/timeseries.csv')
+  # Your code goes here.
 ---
