@@ -136,3 +136,19 @@ code: |
   ts = pd.read_csv('data/timeseries.csv')
   # Your code goes here.
 ---
+type: testless-coding-question
+id: d7fe319f-57d6-4c9d-ae21-6ecb4f00e443
+question: |
+  Create a barchart of stock price of Facebook vs apple in the year 2017. The filtered dataframe is created using the code below. The chart should look like this:
+  ![Barchart](assets/img/stocks_barchart.png)
+code: |
+  import numpy as np
+  import pandas as pd
+  import matplotlib.pyplot as plot
+
+  ts.index = pd.to_datetime(ts.index)
+  ts = ts[ts.index.year == 2017]
+  ts_2017 = ts.groupby([ts.index.year.rename('year'),ts.index.month.rename('month')])['AAPL', 'FB'].last()
+  ts_2017.index = ts_2017.index.droplevel(0)
+  # Your code goes here
+---
