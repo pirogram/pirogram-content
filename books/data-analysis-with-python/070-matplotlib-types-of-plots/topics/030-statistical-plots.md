@@ -30,22 +30,22 @@ code: |
   import matplotlib.pyplot as plt
   import pandas as pd
   import numpy as np
-  fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(figsize = (9,7))
+  fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize = (9,7))
 
   ax1.hist(iris['sepal_length'].values)
-  ax1.xlabel('Sepal Length in cm')
-  ax1.ylabel('Frequency')
+  ax1.set_xlabel('Sepal Length in cm')
+  ax1.set_ylabel('Frequency')
 
-  fig.suptitle('Histogram of numeric columns of iris dataset')
   ax2.hist(iris['sepal_width'].values)
-  ax2.xlabel('Sepal Width in cm')
+  ax2.set_xlabel('Sepal Width in cm')
 
   ax3.hist(iris['petal_length'].values)
-  ax3.xlabel('Petal Length in cm')
-  ax3.ylabel('Frequency')
+  ax3.set_xlabel('Petal Length in cm')
+  ax3.set_ylabel('Frequency')
 
   ax4.hist(iris['petal_width'].values)
-  ax4.xlabel('Petal Width in cm')
+  ax4.set_xlabel('Petal Width in cm')
+  fig.suptitle('Histogram of numeric columns of iris dataset')
   plt.show()
 --- |
   Violin plots are similar to box plots but they add useful information such as the `distribution` of the data. Box plots show data points outside 1.5 * the inter-quartile range (IQR) as outliers above or below the whiskers whereas violin plots show the `whole range` of the data.
@@ -58,14 +58,11 @@ code: |
   import pandas as pd
   import numpy as np
 
-  iris = pd.read_csv('data/iris.csv')
-  violin_plot = plt.violinplot(iris.iloc[:, :4].values);
-  for pc in violin_plot['bodies']:
-    pc.set_facecolor('red')
-    pc.set_edgecolor('black')
-    pc.set_alpha(1)
-  plt.title('Violinplot of iris dataset columns')
-  plt.ylabel('Length in cm')
-  plt.xticks(np.arange(1,5), iris.iloc[:, :4].columns)
+  fig, ax = plt.subplots()
+  ax.violinplot(iris.iloc[:, :4].values)
+  ax.set_title('Violinplot of iris dataset columns')
+  ax.set_ylabel('Length in cm')
+  ax.set_xticks(np.arange(1,5))
+  ax.set_xticklabels(iris.iloc[:, :4].columns)
   plt.show()
 ---
