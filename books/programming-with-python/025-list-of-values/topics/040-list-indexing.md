@@ -32,7 +32,7 @@ code: |
 --- |
   If you run this example, you may find the result unexpected. You would have thought that position 2 will give you `'www.pirogram.com'`. However, position 2 gives you `'www.twitter.com'`. Why did that happen? That's because the position numbers in a list start from `0` and not `1`. Following illustration will help you understand the same:
 
-  ![list indexing](assets/img/list-indexing.svg)
+  ![list indexing](assets/img/list-indexing.png)
 
   Why do the list position numbers start from `0` instead of `1`. It's a perspective thing. Early programming languages made this choice and it has become the default since then. You'll get used to it (after a while).
 
