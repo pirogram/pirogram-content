@@ -41,7 +41,7 @@ code: |
   ## Indexing in Reverse Direction
   Another indexing scheme (aka the position numbering scheme) is to start from the last item and count backwards. Here is an illustration for the same:
 
-  ![list reverse indexing](assets/img/list-reverse-indexing.svg)
+  ![list reverse indexing](assets/img/list-reverse-indexing.png)
 
   Now, why do we start with `-1` instead of `0` when counting backwards? Well, `0` is already taken. Isn't it? Of course, it would seem much more consistent to start counting from `1` while counting forward but that ship sailed several decades ago.
 
