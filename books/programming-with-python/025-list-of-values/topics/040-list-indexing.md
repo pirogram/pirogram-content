@@ -69,7 +69,7 @@ code: |
 
 ---
 type: live-code
-id: 34b730c0-73a7-4e18-b3c1-241961240fed
+id: b70e51c4-5364-457d-8f99-c4c46cd66017
 code: |
   websites = [
     'www.gmail.com',
@@ -146,7 +146,7 @@ code: |
 
 ---
 type: live-code
-id: 85e6a39e-0a7b-4afe-9cf7-d98ca2632c01
+id: 4acdbd4c-834d-4664-8314-8611c93ee507
 code: |
   websites = [
     'www.gmail.com',
