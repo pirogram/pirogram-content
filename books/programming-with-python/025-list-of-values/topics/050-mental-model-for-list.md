@@ -40,3 +40,5 @@ code: |
   ![list anatomy replacement](assets/img/list-anatomy-replacement.svg)
 
   The item presently at index 1 is thrown away and a different item is placed in the slot.
+
+  Slots are transparent to you. You never interact with the slots or see them in anyway. But it's helpful to know that a list is a sequence of slots and not that of values. This is particularly important when you are modifying the list (which happens to be a very common thing in programming).
