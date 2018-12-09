@@ -14,7 +14,7 @@ title: List Indexing
 
   One way to think about this list is that these are the five websites open in my browser right now. Another way to think about it is the sequence in which these websites are open in the browser. For example, 1st tab has `'www.gmail.com'`, 2nd tab has `'www.pirogram.com'`, last tab has `'atom.io'` etc.
 
-  Here is an example that shows how you can retrieve the item at position 2 from the list. The general syntax is `list_name[position_number]`. So, position 2 for our list of websites, it would be `websites[2]`.
+  Here is an example that shows how you can retrieve the item at position 2 from the list. The general syntax is `list_name[position_number]`. So, to get website at position 2 from our list, we could use `websites[2]`.
 
 ---
 type: live-code
@@ -34,7 +34,7 @@ code: |
 
   ![list indexing](assets/img/list-indexing.svg)
 
-  Why does the list position numbering start from `0` instead of `1`. It's a perspective thing. Early programming languages made this choice and it has become the default since then. You'll get used to it (after a while).
+  Why do the list position numbers start from `0` instead of `1`. It's a perspective thing. Early programming languages made this choice and it has become the default since then. You'll get used to it (after a while).
 
   Another nuance here is the terminology. Instead of _position_, people use the term _index_. There isn't much philosophy behind it. While it's more convenient to think in terms of position, _index_ is the term adopted by programming languages.
 
@@ -121,7 +121,7 @@ code: |
     'atom.io'
   ]
 
-  websites[2] = 'www.goodreads.com'
+  websites[3] = 'www.goodreads.com'
   websites
 --- |
   We can also use reverse indexing to update the list:
@@ -138,11 +138,11 @@ code: |
     'atom.io'
   ]
 
-  websites[-3] = 'www.goodreads.com'
+  websites[-2] = 'www.goodreads.com'
   websites
 
 --- |
-  Just by combining the operations so far, we can do solve more interesting problems. For example, we could say that open `'www.goodreads.com'` in the tab that currently has `'www.twitter.com'`. How do we do that?
+  Just by combining the operations so far, we can solve more interesting problems. For example, we could say that open `'www.goodreads.com'` in the tab that currently has `'www.twitter.com'`. How do we do that?
 
 ---
 type: live-code
