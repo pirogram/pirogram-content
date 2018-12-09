@@ -148,7 +148,7 @@ code: |
   However, consider the following example:
 ---
 type: live-code
-id: 4fcfcf02-901a-4c8a-b618-f3c2d6df1a00
+id: 02de340d-03f2-4272-8d67-b3482714bc5a
 code: |
   websites = [
     'www.gmail.com',
