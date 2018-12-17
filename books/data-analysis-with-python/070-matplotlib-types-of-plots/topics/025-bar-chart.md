@@ -1,28 +1,6 @@
-title: Lines and Bars
+title: Bar chart
 --- |
-  The default plotting style in matplotlib is a line graph and both axes.plot and pyplot.plot return a `line graph`. Line plots are most commonly used to plot continuous data, `Timeseries` plot is a common example.
----
-type: live-code
-id: 6db1e8c5-7cfb-4bd4-b3d3-a47f6f97dee3
-code: |
-  import matplotlib.pyplot as plt
-  import numpy as np
-  import pandas as pd
-
-  today = np.datetime64('today')
-  # Create an array of dates over last 100 days
-  dates = pd.date_range(end = today, periods=100)
-  # Create an array of random numbers
-  values = np.random.randn(100)
-
-  fig, ax = plt.subplots(figsize = (10,5))
-  ax.plot(dates, values)
-  ax.set_title('line plot')
-  ax.set_xlabel('Dates')
-  ax.set_ylabel('Values')
-  plt.show()
---- |
-  Bar graphs are used more commonly to represent discreet values. Here is a bar graph of `count` of movies by `ratings` in year 2016 from [Imdb dataset](/data/movie_metadata.csv).
+  Bar graphs are used more commonly to represent discrete values. Here is a bar graph of `count` of movies by `ratings` in year 2016 from [Imdb dataset](/data/matplotlib/movie_metadata.csv).
 ---
 type: live-code
 id: 3bf2211f-0b1e-438c-8c09-98554805553d
@@ -31,7 +9,7 @@ code: |
   import pandas as pd
   import numpy as np
 
-  imdb = pd.read_csv('data/movie_metadata.csv')
+  imdb = pd.read_csv('data/matplotlib/movie_metadata.csv')
 
   # Find count of movies by ratings and store in x and y values.
   movie_ratings_2016 = imdb[imdb.title_year == 2016].content_rating.value_counts()
@@ -44,7 +22,7 @@ code: |
   plt.title('Count of movies with different ratings in 2016')
   plt.show()
 --- |
-  To represent discreet value of multiple variables by a category, we create `grouped bar chart`. Here is a plot of `mean` values by species in iris dataset. We plot the `species` vs the `mean` for each variable on the `same axes` but move the `location` of `xtick` so that the bars do not overlap.
+  To represent discrete value of multiple variables by a category, we create `grouped bar chart`. Here is a plot of `mean` values by species in [Iris dataset](/data/matplotlib/iris.csv). We plot the `species` vs the `mean` for each variable on the `same axes` but move the `location` of `xtick` so that the bars do not overlap.
   * Set the parameter barwidth to use in plot.
   * Create an array of X values (number of unique species in the dataset)
   * Plot X vs the variables in iris dataset, increment the X value by the barwidth at each call so that the bars align.
@@ -58,7 +36,7 @@ code: |
   import numpy as np
   import pandas as pd
 
-  iris = pd.read_csv('data/iris.csv')
+  iris = pd.read_csv('data/matplotlib/iris.csv')
   # Find mean values by species
   iris_mean = iris.groupby('species').mean()
 
@@ -93,7 +71,7 @@ code: |
   import numpy as np
   import pandas as pd
 
-  iris = pd.read_csv('data/iris.csv')
+  iris = pd.read_csv('data/matplotlib/iris.csv')
   # Find mean values by species
   iris_mean = iris.groupby('species').mean()
 
@@ -122,19 +100,6 @@ code: |
   ax.set_ylabel('Mean')
   ax.legend()
   plt.show()
----
-type: testless-coding-question
-id: ad76e7eb-c7dd-43be-ad55-3fa0d9d8fad8
-question: |
-  Create a line graph of the stock price of `Apple` and `Facebook` from the `timeseries` dataframe given below. Add a legend to indicate each ticker with a distinct color. The figure should looks like this:
-  ![Lineplot](assets/img/lineplot.png)
-code: |
-  import matplotlib.pyplot as plt
-  import numpy as np
-  import pandas as pd
-
-  ts = pd.read_csv('data/timeseries.csv')
-  # Your code goes here.
 ---
 type: testless-coding-question
 id: d7fe319f-57d6-4c9d-ae21-6ecb4f00e443
