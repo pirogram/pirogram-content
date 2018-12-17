@@ -210,6 +210,7 @@ question: |
   Enter another number: 7
   Enter yet another number: 5
   7 is the biggest number.
+  ```
 code: |
   # your code goes here
 ---
