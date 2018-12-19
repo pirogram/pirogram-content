@@ -13,7 +13,7 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0:
-      print(number, 'is a +ve number')
+    print(number, 'is a +ve number')
 
 --- |
   If you enter a number greater than 0, the _condition_ `number > 0` would be met and the corresponding _action_ would be taken.
@@ -35,7 +35,7 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0:
-      print(number, 'is a +ve number')
+    print(number, 'is a +ve number')
 
   print('Bye')
 --- |
@@ -49,9 +49,9 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0:
-      print(number, 'is a +ve number')
+    print(number, 'is a +ve number')
   else:
-      print(number, 'is not a +ve number')
+    print(number, 'is not a +ve number')
 
   print('Bye')
 --- |
@@ -63,11 +63,11 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0:
-      print(number, 'is a +ve number')
+    print(number, 'is a +ve number')
   elif number < 0:
-      print(number, 'is a -ve number')
+    print(number, 'is a -ve number')
   else:
-      print(number, 'is zero')
+    print(number, 'is zero')
 
   print('Bye')
 
@@ -81,17 +81,17 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0:
-      if number%2 == 0:
-          print(number, 'is a +ve even number')
-      else:
-          print(number, 'is a +ve odd number')
+    if number%2 == 0:
+      print(number, 'is a +ve even number')
+    else:
+      print(number, 'is a +ve odd number')
   elif number < 0:
-      if number%2 == 0:
-          print(number, 'is a -ve even number')
-      else:
-          print(number, 'is a -ve odd number')
+    if number%2 == 0:
+      print(number, 'is a -ve even number')
+    else:
+      print(number, 'is a -ve odd number')
   else:
-      print(number, 'is zero')
+    print(number, 'is zero')
 
   print('Bye')
 
@@ -104,15 +104,15 @@ code: |
   number = int(input('Enter a number: '))
 
   if number > 0 and number%2 == 0:
-      print(number, 'is a +ve even number')
+    print(number, 'is a +ve even number')
   elif number > 0 and number%2 == 1:
-      print(number, 'is a +ve odd number')
+    print(number, 'is a +ve odd number')
   elif number < 0 and number%2 == 0:
-      print(number, 'is a -ve even number')
+    print(number, 'is a -ve even number')
   elif number < 0 and number%2 == 1:
-      print(number, 'is a -ve odd number')
+    print(number, 'is a -ve odd number')
   else:
-      print(number, 'is zero')
+    print(number, 'is zero')
 
   print('Bye')
 
@@ -139,6 +139,34 @@ question: |
   Ask the user to enter a number. If the number is even, print `even number`. Otherwise, print `odd number`. Hint: if a number `num` is even, `num%2` would be `0`.
 code: |
   # your code goes here.
+
+---
+type: testless-coding-question
+id: 9b1cae11-8679-40eb-b3b3-ddd77341dcb3
+question: |
+  Ask the user to enter two numbers. Print the number that's bigger. Example session:
+  ```
+  Enter a number: 4
+  Enter another number: 7
+  7 is the bigger number.
+  ```
+code: |
+  # your code goes here
+
+---
+type: testless-coding-question
+id: 4a5458a4-7c11-4917-a538-e5c137fb1578
+question: |
+  Ask the user to enter two numbers. Print which number is bigger and which is smaller. Example session:
+  ```
+  Enter a number: 4
+  Enter another number: 7
+  7 is the bigger number.
+  4 is the smaller number.
+  ```
+
+code: |
+  # your code goes here
 
 ---
 type: testless-coding-question
@@ -171,34 +199,6 @@ question: |
   Hint: a number is odd if `number % 2` yields `1`.
 code: |
   # your code goes here.
-
----
-type: testless-coding-question
-id: 9b1cae11-8679-40eb-b3b3-ddd77341dcb3
-question: |
-  Ask the user to enter two numbers. Print the number that's bigger. Example session:
-  ```
-  Enter a number: 4
-  Enter another number: 7
-  7 is the bigger number.
-  ```
-code: |
-  # your code goes here
-
----
-type: testless-coding-question
-id: 4a5458a4-7c11-4917-a538-e5c137fb1578
-question: |
-  Ask the user to enter two numbers. Print which number is bigger and which is smaller. Example session:
-  ```
-  Enter a number: 4
-  Enter another number: 7
-  7 is the bigger number.
-  4 is the smaller number.
-  ```
-
-code: |
-  # your code goes here
 
 ---
 type: testless-coding-question

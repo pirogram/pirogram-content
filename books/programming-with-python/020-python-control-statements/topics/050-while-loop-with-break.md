@@ -1,21 +1,40 @@
 title: Infinite While Loop With Break
 --- |
-  We'll keep asking the user to enter a number till the user enters `0`. We'll then print the total number of times the user entered a number.
+  Here is the problem we want to solve: we'll keep asking the user to enter a number till the user enters `0`. We'll then print the total number of times the user entered a number.
+
+  One way to structure this program (based on our current knowledge) is as follows:
+---
+type: live-code
+id: 7ae6b8e6-54a2-40b3-997f-125d7a7a866c
+code: |
+  count = 0
+  num = int( input('Enter a number: '))
+
+  while num != 0:
+    count += 1
+    num = int( input('Enter a number: '))
+
+  print('You entered', count, 'numbers')
+--- |
+  This program works! However, can we rewrite it to avoid these two separate calls to `input` function? Yes we can, here is the example:
 ---
 type: live-code
 id: 2a8b606f-2485-4ecd-8d81-837812c3fb7e
 code: |
   count = 0
   while True:
-    num = input("Please enter a number: ")
-    num = int(num)
+    num =  int(input("Please enter a number: "))
     if num == 0:
       break
-    else:
-      count = count + 1
+
+    count = count + 1
 
   print("You entered", count, "numbers")
 
+--- |
+  In this program, `while True` is called the infinite loop because `while` loop is checking on a condition that is always true. The key in this program is the `break` statement.
+
+  What does `break` do? Whenever Python encounters a `break` statement, it would exit the while loop and jump the next statement _after_ the loop.
 ---
 type: testless-coding-question
 id: 5dd899ba-9b7d-44ac-ade8-701b5e867955
