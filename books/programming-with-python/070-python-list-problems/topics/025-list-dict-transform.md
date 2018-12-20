@@ -57,5 +57,5 @@ question: |
 code: |
   def flatten_list( l):
     # your code goes here
-tests:
+tests: |
   assert flatten_list([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]
