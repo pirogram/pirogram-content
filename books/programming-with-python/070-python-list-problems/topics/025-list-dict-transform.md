@@ -25,7 +25,7 @@ question: |
 code: |
   def list_to_dict( l):
     # your code goes here
-tests:
+tests: |
   assert list_to_dict(['a', 1, 'b', 2]) == {'a': 1, 'b': 2}
 
 ---
