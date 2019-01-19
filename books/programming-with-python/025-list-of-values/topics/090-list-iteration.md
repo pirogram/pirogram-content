@@ -4,10 +4,10 @@ title: List Iteration
   * if you have a list of numbers and you want to calculate the sum total of the same, you would go through all the numbers and add them up.
   * if you have a list of emails and you want to find out which ones were sent on a specific date, you would again go through all emails and check for the date range.
 
-  The process of going through list items one by one is called _list iteration_. Before we look at the idiomatic way of doing it in Python, we'll do it using the `while` loop. Just to build upon our existing knowledge. Here is the code that can find the sum total of all numbers in a list:
+  The process of going through list items one by one is called _list iteration_. Before we look at the idiomatic way of doing it in Python, we'll do it using the `while` loop. Just to build upon our existing knowledge.
 ---
 type: live-code
-id: 71b0b81e-ab89-4f77-9afe-816e0645d5e9
+id: dfc88818-4f51-4d94-b408-521e5aeb2a4f
 code: |
   numbers = [9, 2, 34, 2, 7, 8, 23, 4, 9]
 
@@ -23,7 +23,7 @@ code: |
 
 ---
 type: live-code
-id: eef14f6d-1c1f-4eb9-b034-72d3e4d1a1f3
+id: 6456b9f4-02c0-4651-849e-d1af23847d1d
 code: |
   numbers = [9, 2, 34, 2, 7, 8, 23, 4, 9]
 
@@ -65,7 +65,7 @@ question: |
 code: |
   numbers = [7,   0, -18,   0,  16, -18,   8,  -4,  10, -18,  -9,  -9,  -2,
       2,  -2,  17, -20,  -5,  14, -16]
-      
+
 ---
 type: testless-coding-question
 id: 426aa07d-9b5b-423b-ae6e-8b45cad0778d
