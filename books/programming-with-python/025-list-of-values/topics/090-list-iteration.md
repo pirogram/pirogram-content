@@ -71,7 +71,7 @@ question: |
   You are given a list of numbers. Find the product of all the numbers. For example, for the list `[1, 2, 3]`, the product would be `1 * 2 * 3` (i.e. `6`).
 code: |
   numbers = [2, 3, 9, 3]
-
+---
 type: testless-coding-question
 id: 80ca21ac-73de-472f-bc1d-1ff298b76234
 question: |
