@@ -130,3 +130,39 @@ code: |
     [3, 0, 1],
     [9, 1, 0]
   ]
+
+---
+type: testless-coding-question
+id: e2ed5c05-3c57-4d23-9f25-4d583d9c0c3f
+question: |
+  You are given a list of lists of numbers. Print the longest list.
+code: |
+  numbers = [
+    [1, 2, 3],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5],
+    [1, 2, 3]
+  ]
+
+---
+type: testless-coding-question
+id: c49e229b-3131-4366-9b78-0f53020804ee
+question: |
+  You are given a list of lists of numbers. Print the list that has the largest number. Note: you can use [`max()`](https://docs.python.org/3/library/functions.html#max) function for this. `max([1, 2, 3, 2])` returns `3`.
+code: |
+  numbers = [
+    [4, 2, 0],
+    [9, 12, 12],
+    [7, 1, 3]
+  ]
+---
+type: testless-coding-question
+id: c49e229b-3131-4366-9b78-0f53020804ee
+question: |
+  You are given a list of lists of numbers. Print the list that has the smallest number. Note: you can use [`min()`](https://docs.python.org/3/library/functions.html#min) function for this. `min([1, 2, 3, 2])` returns `1`.
+code: |
+  numbers = [
+    [4, 2, 0],
+    [9, 12, 12],
+    [7, 1, 3]
+  ]

@@ -165,7 +165,7 @@ code: |
   websites
 
 --- |
-  Here, the behavior is different. In this example, we don't create a slice of the list. Rather, assigned certain values to a portion of the list.
+  Here, the behavior is different. In this example, we didn't create a slice of the list. Rather, we assigned certain values to a portion of the list.
 
 ---
 type: multiple-choice-question

@@ -77,7 +77,7 @@ code: |
          2,  -2,  17, -20,  -5,  14, -16]
 
   for index in range( len(numbers) ):
-    if num < 0:
+    if numbers[index] < 0:
       numbers[index] = 0
 
   print(numbers)
