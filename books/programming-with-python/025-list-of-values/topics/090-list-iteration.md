@@ -78,7 +78,7 @@ code: |
 type: testless-coding-question
 id: 80ca21ac-73de-472f-bc1d-1ff298b76234
 question: |
-  You are given a list of numbers. Find the product of +ve numbers (greater thhan `0`) in the list.
+  You are given a list of numbers. Find the product of +ve numbers (greater than `0`) in the list.
 code: |
   numbers = [7,   0, -18,   0,  16, -18,   8,  -4,  10, -18,  -9,  -9,  -2,
       2,  -2,  17, -20,  -5,  14, -16]
@@ -96,7 +96,7 @@ code: |
 type: testless-coding-question
 id: 6a962ba9-908f-46e1-bd01-625f438b3a90
 question: |
-  You are given a list of numbers. Find the largest number from the list.
+  You are given a list of numbers. Find the largest number from the list. Do not use `max()` function. Use list iteration.
 code: |
   numbers = [7,   0, -18,   0,  16, -18,   8,  -4,  10, -18,  -9,  -9,  -2,
         2,  -2,  17, -20,  -5,  14, -16]
@@ -128,7 +128,7 @@ code: |
   numbers = [
     [1, 2, 3],
     [3, 0, 1],
-    [9, 1, 0]
+    [0, 1, 0]
   ]
 
 ---
@@ -157,7 +157,7 @@ code: |
   ]
 ---
 type: testless-coding-question
-id: c49e229b-3131-4366-9b78-0f53020804ee
+id: 27daf162-666a-462b-bbda-c46907b8e7d5
 question: |
   You are given a list of lists of numbers. Print the list that has the smallest number. Note: you can use [`min()`](https://docs.python.org/3/library/functions.html#min) function for this. `min([1, 2, 3, 2])` returns `1`.
 code: |
