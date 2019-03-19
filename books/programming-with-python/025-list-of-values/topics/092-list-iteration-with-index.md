@@ -9,7 +9,7 @@ code: |
   numbers = [7,   0, -18,   0,  16, -18,   8,  -4,  10, -18,  -9,  -9,  -2,
        2,  -2,  17, -20,  -5,  14, -16]
 
-  for number, index in enumerate(numbers):
+  for index, number in enumerate(numbers):
       print(index, '->', number)
 
 --- |
@@ -21,7 +21,7 @@ code: |
   numbers = [7,   0, -18,   0,  16, -18,   8,  -4,  10, -18,  -9,  -9,  -2,
        2,  -2,  17, -20,  -5,  14, -16]
 
-  for number, index in enumerate(numbers):
+  for index, number in enumerate(numbers):
       if number < 0:
           numbers[index] = 0
 

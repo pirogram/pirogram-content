@@ -1,6 +1,6 @@
 title: Star Patterns
 --- |
-  Let's get more practice on the `while` loop. In order to do that, we'll solve a lot of _star pattern_ problems.
+  Let's get more practice on the `while` loop. In order to do that, we'll solve a lot of _star pattern_ problems. For these exercises, it would be handy to remember that multiplying a string by a number makes that string repeat. For example, `5*'#'` would result in `'#####'`.
 
 ---
 type: testless-coding-question

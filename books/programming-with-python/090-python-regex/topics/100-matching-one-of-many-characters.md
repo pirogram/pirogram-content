@@ -131,7 +131,7 @@ options:
 type: multiple-choice-question
 id: 50b56794-b819-4fc9-b5ab-8f7db62f3236
 question: |
-  Here are some movie names. Which ones would match the regex `r"[0-29][0-5][0-9][0-9]:"`
+  Here are some movie names. Which ones would match the regex `r"[0-29][0-5][0-9][0-9]"`
 options:
   - text: |
       2001: A Space Odyssey
