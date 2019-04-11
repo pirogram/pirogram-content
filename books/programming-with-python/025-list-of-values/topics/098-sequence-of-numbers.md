@@ -41,7 +41,7 @@ question: |
   `range(8)` would give you a sequence of numbers from 0 to 7. True or False?
 options:
   - text: "true"
-    is_correct: true
+    correct: true
   - text: "false"
 
 ---
