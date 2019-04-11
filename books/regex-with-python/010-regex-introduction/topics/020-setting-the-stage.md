@@ -5,7 +5,7 @@ title: Setting The Stage
 
   <img src='assets/img/favorite-website-form.png' class='ui image large'/>
 
-  Let's talk about a problem that someone can actually run into. Let's say, you were intereted in finding out the most popular websites that kids in your school go to. You create a Google Spreadsheet based Form and send a link to everyone in your school. There is only one simple question: `What's your favorite website?`.
+  Let's talk about a problem that someone can actually run into. Let's say, you were interested in finding out the most popular websites that kids in your school go to. You create a Google Spreadsheet based Form and send a link to everyone in your school. There is only one simple question: `What's your favorite website?`.
 
   ## Stage 2
   <img src='assets/img/favorite-websites.png' class='ui image large'/>

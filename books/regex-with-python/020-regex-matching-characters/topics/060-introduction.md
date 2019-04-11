@@ -1,4 +1,4 @@
-title: Matching Characters
+title: Introduction
 --- |
 
   In this section, we'll solve problems that revolve around presence or absence of certain characters in the text. For most of the problems, we'll use Hollywood movie names as the dataset where we do our pattern matching. It looks like the following:
@@ -14,7 +14,7 @@ title: Matching Characters
   ...
   Zoom
   Zoot Suit
-  Zorba the Greek 
+  Zorba the Greek
   Zorn's Lemma
   Zorro
   Zotz!

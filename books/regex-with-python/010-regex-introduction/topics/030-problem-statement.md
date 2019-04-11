@@ -23,4 +23,4 @@ title: Problem Statement
 
   This is where the problem is: how do you map all these variations of `wattpad` to just what it is (i.e. `wattpad`)? To your mind, the pattern is clear and you can easily see the mapping. However, if you were to write a program for this purpose, it would be a fairly involved task.
 
-  This is where regular expresions shine. They give you a powerful language to describe the pattern (or the variations thereof).
+  This is where regular expressions shine. They give you a powerful language to describe the pattern (or the variations thereof).

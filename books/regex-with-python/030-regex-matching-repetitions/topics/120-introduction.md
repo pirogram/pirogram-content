@@ -1,4 +1,4 @@
-title: Matching Repetitions
+title: Introduction
 --- |
   So far, we have looked at specifying *which characters* are allowed and which ones are not allowed in the pattern. Now, we'll look at specifying *how many* are allowed.
 

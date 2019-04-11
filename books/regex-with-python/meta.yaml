@@ -1,0 +1,9 @@
+title: Regex With Python
+code: regex-with-python
+description: |
+  This codebook takes you through the world of regular expressions one step at a time. It builds up gradually and has exercises that increase in complexity. By the end of this codebook, you should be well versed with the power of regex. When faced with a problem, you'll know if you could solve it with regular expressions and have a starting point to move forward.
+author:
+  code: manasgarg
+  name: Manas Garg
+  image: ""
+  linkedin: "https://www.linkedin.com/in/manasgarg/"

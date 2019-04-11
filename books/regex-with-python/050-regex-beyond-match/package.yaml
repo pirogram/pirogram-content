@@ -1,0 +1,3 @@
+code: regex-beyond-match
+title: Regex Beyond Match
+description: The usefulness of regular expressions goes beyond matching patterns. We can also extract certain parts of string that match the pattern and use regex for splitting.
