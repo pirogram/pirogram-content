@@ -4,6 +4,7 @@ title: Value Types
 
   Some times, we would like to create a new value type. For example, we worked on building a todo application where a todo item has two attributes: the item and state (i.e. whether it is done or not). We can use a dictionary to achieve the same. For example:
 
+---
 type: live-code
 id: 9209aae7-3c30-432f-9f3a-30849afe0b1e
 code: |
