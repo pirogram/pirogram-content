@@ -81,7 +81,7 @@ code: |
 tests: |
   assert match_sentence('I am a super human.') == True
   assert match_sentence('Spice route is not spicy.') == True
-  assert match_sentence('Cat can't climb.') == True
+  assert match_sentence('Cat cannot climb.') == True
   assert match_sentence('Spiderman returns is not interesting.') == False
   assert match_sentence('Cat can jump.') == False
 
@@ -109,7 +109,7 @@ code: |
 tests: |
   assert match_sentence('In year 2000, there was an earthquake.') == True
   assert match_sentence('1984.') == True
-  assert match_sentence('In 2020, I'll be 20 years old') == True
+  assert match_sentence("In 2020, I'll be 20 years old") == True
   assert match_sentence('I am 20 years old now.') == False
   assert match_sentence('123456789 is a really long number.') == False
 
