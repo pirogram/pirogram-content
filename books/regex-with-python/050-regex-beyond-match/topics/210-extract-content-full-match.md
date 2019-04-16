@@ -81,9 +81,9 @@ code: |
       # code goes here
 
 tests: |
-  assert extract_adverb('Strictly Ballroom') == 'Sense'
-  assert extract_adverb('Tough and Deadly') == 'Gumby'
-  assert extract_adverb('Heavenly Creatures') == 'Jason'
+  assert extract_adverb('Strictly Ballroom') == 'Strictly'
+  assert extract_adverb('Tough and Deadly') == 'Deadly'
+  assert extract_adverb('Heavenly Creatures') == 'Heavenly'
   assert extract_adverb('Superman') == None
 
 solution: |
