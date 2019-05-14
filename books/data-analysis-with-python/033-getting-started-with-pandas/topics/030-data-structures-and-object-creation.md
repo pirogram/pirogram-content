@@ -59,7 +59,7 @@ import pandas as pd
   # Series from a Python dictionary
   s = pd.Series(data = 100, index = ['a', 'b', 'c', 'd'])
   s
----
+--- |
   ### Dataframe
   Dataframe is a `2-dimensional` labeled data structure which supports columns of different types. It contains three key components, `data`, `index` and `columns`.
   #### Data
