@@ -1,6 +1,6 @@
-title: Statistical Plots
+title: Boxplot
 --- |
-  The Statistical plots like `boxplot`, `violinplot` and `histogram` help with visualizing the `Statistical summary` and `distribution` of the data. Boxplot makes a `box` and `whisker`, the box extends from the lower to upper quartile values of the data, with a line at the median. The whiskers extend from the box to show the range of the data.
+  Boxplot is another type of Statistical plot which helps with visualizing the `Statistical summary` of the data. Boxplot makes a `box` and `whisker`, the box extends from the lower to upper quartile values of the data, with a line at the `median`. The whiskers extend from the box to show the range of the data.
 ---
 type: live-code
 id: ae8c4f5f-7e5c-4e4b-bed3-fd680bfb7fa7
@@ -20,32 +20,6 @@ code: |
   ax.set_title('Boxplot of iris dataset columns')
   ax.set_ylabel('Length in cm')
 
-  plt.show()
---- |
-  Histograms are used to visualize the `distribution` of a quantitative variable. The values are placed into different bins and the frequency of observations in each of those bins is calculated. The data is considered to be normally distributed when the curve is symmetrical around mean and skewed if the mean is on either side of the peak but not at the peak. Here are the histograms of iris numeric columns on a figure with 2 rows and 2 cols.
----
-type: live-code
-id: c9d7dbfa-20c9-4d9f-8aa6-9001c3b54162
-code: |
-  import matplotlib.pyplot as plt
-  import pandas as pd
-  import numpy as np
-  fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize = (9,7))
-
-  ax1.hist(iris['sepal_length'].values)
-  ax1.set_xlabel('Sepal Length in cm')
-  ax1.set_ylabel('Frequency')
-
-  ax2.hist(iris['sepal_width'].values)
-  ax2.set_xlabel('Sepal Width in cm')
-
-  ax3.hist(iris['petal_length'].values)
-  ax3.set_xlabel('Petal Length in cm')
-  ax3.set_ylabel('Frequency')
-
-  ax4.hist(iris['petal_width'].values)
-  ax4.set_xlabel('Petal Width in cm')
-  fig.suptitle('Histogram of numeric columns of iris dataset')
   plt.show()
 --- |
   Violin plots are similar to box plots but they add useful information such as the `distribution` of the data. Box plots show data points outside 1.5 * the inter-quartile range (IQR) as outliers above or below the whiskers whereas violin plots show the `whole range` of the data.

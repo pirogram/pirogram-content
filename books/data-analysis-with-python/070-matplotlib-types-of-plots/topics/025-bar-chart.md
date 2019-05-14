@@ -1,6 +1,6 @@
 title: Bar chart
 --- |
-  Bar graphs are used more commonly to represent discrete values. Here is a bar graph of `count` of movies by `ratings` in year 2016 from [Imdb dataset](/data/matplotlib/movie_metadata.csv).
+  Bar graphs are used more commonly to represent discrete values. Here is a bar graph of `count` of movies by `ratings` in year 2016 from [Imdb dataset](/data/matplotlib/imdb.csv).
 ---
 type: live-code
 id: 3bf2211f-0b1e-438c-8c09-98554805553d
@@ -9,7 +9,7 @@ code: |
   import pandas as pd
   import numpy as np
 
-  imdb = pd.read_csv('data/matplotlib/movie_metadata.csv')
+  imdb = pd.read_csv('data/matplotlib/imdb.csv')
 
   # Find count of movies by ratings and store in x and y values.
   movie_ratings_2016 = imdb[imdb.title_year == 2016].content_rating.value_counts()
