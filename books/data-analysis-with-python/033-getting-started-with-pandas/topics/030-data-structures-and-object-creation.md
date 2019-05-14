@@ -55,7 +55,7 @@ code: |
 type: live-code
 id: 35de5cfe-aef3-41b7-8210-dfb5395a8fc1
 code: |
-import pandas as pd
+  import pandas as pd
   # Series from a Python dictionary
   s = pd.Series(data = 100, index = ['a', 'b', 'c', 'd'])
   s
