@@ -4,6 +4,7 @@ title: Data Structures and Object creation
 
   ### Series
   Series is a `one-dimensional` array labeled with axis labels. The two key components of a series are `data` and `index`.
+
   #### Data
   The `data` can be of various types like integers, strings, floating point numbers, Python objects, etc.
   Here are some data structures that can be used to create a series:
@@ -11,6 +12,7 @@ title: Data Structures and Object creation
   * Python list
   * Python dictionary
   * A scalar value
+
   #### Index
   The axis labels are referred to as the `index` and should be of hashable type like integers, strings, floating point numbers, tuples etc.
 
@@ -62,13 +64,16 @@ code: |
 --- |
   ### Dataframe
   Dataframe is a `2-dimensional` labeled data structure which supports columns of different types. It contains three key components, `data`, `index` and `columns`.
+
   #### Data
   Data can be one of various types listed below:
   * Dict of 1D ndarrays, lists, dicts, or Series
   * 2-D numpy.ndarray
   * Pandas Series
+
   #### Index
   Index works in similar way as that in Series and should be of hashable type like integers, strings, floating point numbers, tuples etc. Pandas automatically generates `integer index` having values (0, len(data)-1) if no index is specified. Since Dataframe is 2 dimensional data structure, there are two levels of axis labels. Index is referred to as axis 0.
+  
   #### Columns
   The second level of axis labels in Dataframe called columns. They are referred to as axis 1.
 
