@@ -116,5 +116,3 @@ code: |
   np.random.seed(1234)
   values = np.random.randint(10, 100, 10)
   # Your code goes Here
-
----

@@ -44,4 +44,3 @@ code: |
   df
 --- |
   The above DataFrame indicates that we are looking at family income, sex, family size and age as key `variables`. We can now see what does the data in each column indicates. The knowledge would make it easy to perform various operations like fill any missing values, identify any outliers, aggregate, reshape etc.
----

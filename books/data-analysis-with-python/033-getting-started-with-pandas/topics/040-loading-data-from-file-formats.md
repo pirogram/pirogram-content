@@ -14,4 +14,3 @@ code: |
 --- |
   ### Tables
   [pandas.read_table](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_table.html) is used to read general delimited file into DataFrame.
-  
