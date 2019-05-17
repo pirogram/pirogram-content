@@ -1,6 +1,6 @@
-title: Indexing DataFrame
+title: Indexing DataFrame using loc
 --- |
-  [DataFrame.loc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html#pandas-dataframe-loc)[row label, column label] is used to return one or more values based on labels.
+  [DataFrame.loc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html#pandas-dataframe-loc)[row label, column label] is used to return one or more values based on `labels`.
 
   Here is a DataFrame with custom column names and default rangeindex.
 ---
@@ -38,4 +38,3 @@ code: |
   import pandasas pd
   df = pd.DataFrame(np.arange(20).reshape(4,5), columns = list('ABCDE'), index = pd.date_range('01-01-2019', periods=4))
   df.loc['2019-01-02', ['A', 'B']]
----

@@ -1,5 +1,5 @@
 title: Indexing Series
---- |
+---|
   Series is a 1-dimentional data structure and can be indexing using [Series.loc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.loc.html#pandas-series-loc) (label based selection), [Series.iloc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.iloc.html#pandas-series-iloc) (location/index based selection) and in most basic case, using `[]`.
 
   ### Selecting data using [ ]
@@ -21,8 +21,8 @@ code: |
   import pandas as pd
   s = pd.Series([1,2,3])
   s[:2]
---- |
-The slice notation works slightly different in case of custom index and returns all the elements included in the range.
+---|
+  The slice notation works slightly different in case of custom index and returns all the elements included in the range.
 ---
 type: live-code
 id: 9d11ed61-62f1-4553-95bd-7b28f06676af
@@ -52,7 +52,7 @@ code: |
   s = pd.Series([1,2,3,4,5], index = [1,3,4,5,6])
   s[ [3, 5]]
 --- |
-The behavior changes when we try to select a slice. The slice is created based on position and not the custom label.
+  The behavior changes when we try to select a slice. The slice is created based on position and not the custom label.
 ---
 type: live-code
 id: c318705f-0071-48ec-b0ec-e5e615706c39

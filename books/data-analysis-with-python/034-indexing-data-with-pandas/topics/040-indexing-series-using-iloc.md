@@ -27,7 +27,7 @@ code: |
   s = pd.Series([1,2,3,4,5], index = [1,3,4,5,6])
   s.iloc[[2, 4]]
 --- |
-Creating a slice using Series.iloc[lower_index, upper_index] follows Python slicing notation. The below code returns elements values at position 1 and 2 but not at 3.
+  Creating a slice using Series.iloc[lower_index, upper_index] follows Python slicing notation. The below code returns elements values at position 1 and 2 but not at 3.
 ---
 type: live-code
 id: d9b162c6-e057-406e-8ea8-ed0934e5748d
