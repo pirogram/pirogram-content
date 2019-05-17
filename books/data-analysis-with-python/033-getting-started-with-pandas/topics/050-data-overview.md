@@ -1,54 +1,100 @@
 title: Data overview
 --- |
-  Once we load the data into a Series or a Dataframe, we start by gettting an overview of the data. The following methods and attributes in Pandas which make the process easier.
-  #### Viewing the data
-  [DataFrame.head](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.head.html) & [DataFrame.tail](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.tail.html#pandas.DataFrame.tail) return the first and the last n rows respectively. The default value of n is 5.
+  Once the data is loaded from the given source in a DataFrame, first step would be to overview the data. There are some built-in attributes and methods for the purpose.
+
+  Attributes
+  * DataFrame.shape
+  * DataFrame.dtypes
+  * DataFrame.index
+  * DataFrame.columns
+  * DataFrame.values
+
+  Methods:
+  * DataFrame.head
+  * DataFrame.tail
+  * DataFrame.describe
+
+  ### Attributes
+
+  #### DataFrame.shape
+  [DataFrame.shape](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html) returns returns a tuple representing the dimensionality (number of rows and columns) of the Series or DataFrame object .
+---
+type: live-code
+id: a0dfada1-005d-4691-909a-cf7410e1a50c
+code: |
+  import pandas as pd
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.shape
+--- |
+  #### DataFrame.dtypes
+  [DataFrame.dtypes](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html#pandas.DataFrame.dtypes) returns the data type of each column in the DataFrame.
+---
+type: live-code
+id: 557f33c2-b062-4324-a01a-41e154bb8c6c
+code: |
+  import pandas as pd
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.dtypes
+--- |
+  #### DataFrame.index
+  [DataFrame.index](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.index.html) returns an NDarray containing axis labels of the object.
+---
+type: live-code
+id: 3b33d26d-4b85-452d-970e-7707314904ee
+code: |
+  import pandas as pd
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.index
+--- |
+  #### DataFrame.columns
+  [DataFrame.columns](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.columns.html) returns column labels of the DataFrame.
+---
+type: live-code
+id: f5a6815a-7eda-4c37-9ad6-d93bc276b583
+code: |
+  import pandas as pd
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.columns
+--- |
+  #### DataFrame.values
+  [DataFrame.values](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html) return a Numpy representation of the DataFrame.
+---
+type: live-code
+id: b3ff4675-ed40-444b-bae5-735bae1f67ea
+code: |
+  import pandas as pd
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.values
+--- |
+  ### Methods
+
+  #### DataFrame.head & DataFrame.tail
+
+  [DataFrame.head](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.head.html) & [DataFrame.tail](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.tail.html#pandas.DataFrame.tail) return top or bottom n rows respectively. The default value of n is 5 but can be set to any required integer.
 ---
 type: live-code
 id: 408f8263-ac66-40c0-a7bf-9e5dc2bd4970
 code: |
-  import numpy as np
   import pandas as pd
-  df = pd.DataFrame(data = np.random.randn(50,4), columns = ['One', 'Two', 'Three', 'Four'])
-  print('Top 5 rows: ',df.head())
-  print('Bottom 4 rows: ',df.tail( n = 4))
---- |
-  #### Viewing index, columns and underlying Numpy array.
-  [DataFrame.index](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.index.html),  [DataFrame.columns](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.columns.html) and [DataFrame.values] display the index, columns and the data in the form of Numpy array respectively.
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.head()
 ---
 type: live-code
-id: 0280695c-e556-4642-aeea-d5643586d054
+id: 179b1508-38ab-407c-9420-08c9c7a1076c
 code: |
-  import numpy as np
   import pandas as pd
-  df = pd.DataFrame(data = np.random.randn(50,4), columns = ['One', 'Two', 'Three', 'Four'])
-  print('Index: ',df.index)
-  print('Columns: ',df.columns)
-  print('Data: ', df.values)
+  iris = pd.read_csv('data/pandas/iris.csv')
+  iris.tail(3)
 --- |
-  #### Statistical summary of data
-  [DataFrame.describe](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html) generates descriptive statistics of numeric columns that summarize the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values. The parameter `include` can be used to specify non-numeric types.
+  #### DataFrame.describe
+
+  [DataFrame.describe](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html) describe generates the descriptive statistics that summarizes the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values. The parameter `include` can be used to include columns with non-numeric types.
 ---
 type: live-code
 id: d53acde0-47d8-446a-a6fb-053562a3f2c7
 code: |
-  import numpy as np
   import pandas as pd
-  df = pd.DataFrame({'name':['a', 'b', 'c', 'd'], 'val1':[1,2,3,4], 'val2':[1.1,1.2,1.3,1.4]})
-  print(df)
-  print('Statistical summary of numeric columns: ',df.describe())
-  print('Statistical summary of object columns: ',df.describe(include = ['O']))
-  print('Statistical summary of all columns: ',df.describe(include = 'all'))
---- |
-  The index and columns of a DataFrame can be transposed using [DataFrame.T](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.T.html). It reflects the DataFrame over its main diagonal by writing rows as columns and vice-versa. The `property` T is an accessor to the method transpose().
----
-type: live-code
-id: 2d734798-5762-4bde-98d0-010913bb6d26
-code: |
-  import numpy as np
-  import pandas as pd
-  df = pd.DataFrame(data = {'col1':[1,2,3,4], 'col2':['a', 'b', 'c', 'd']})
-  print(df)
-  print(df.T)
---- |
-  A DataFrame can be sorted by index or values using the methods [DataFrame.sort_index](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_index.html) and [DataFrame.sort_values](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html). Both the methods work on
+  iris = pd.read_csv('data/pandas/iris.csv')
+  print('Statistical summary of numeric columns: ',iris.describe())
+  print('Statistical summary of object columns: ',iris.describe(include = ['O']))
+  print('Statistical summary of all columns: ',iris.describe(include = 'all'))

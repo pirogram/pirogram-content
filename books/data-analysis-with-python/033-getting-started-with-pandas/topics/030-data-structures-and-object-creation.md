@@ -3,11 +3,11 @@ title: Data Structures and Object creation
   We will start with an overview of the two data structures in Pandas, `Series` and `DataFrame`.
 
   ### Series
-  Series is a `one-dimensional` array labeled with axis labels. The two key components of a series are `data` and `index`.
+  Series is a `one-dimensional` array labeled with axis labels. The two key components of a Series are `data` and `index`.
 
   #### Data
   The `data` can be of various types like integers, strings, floating point numbers, Python objects, etc.
-  Here are some data structures that can be used to create a series:
+  Here are some data structures that can be used to create a Series:
   * Numpy array
   * Python list
   * Python dictionary
@@ -16,7 +16,9 @@ title: Data Structures and Object creation
   #### Index
   The axis labels are referred to as the `index` and should be of hashable type like integers, strings, floating point numbers, tuples etc.
 
-  The basic method to create a Series is to call [pandas.series](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series). The default setting for data and index parameters is None and will create an empty series. If we pass data but no index to [pandas.series](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series), Pandas automatically generates `integer index` having values (0, len(data)-1)
+  #### Creating Series
+
+  The basic method to create a Series is [pandas.Series](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series). The default setting for data and index parameters is None and will create an empty Series.
 ---
 type: live-code
 id: 14ea82a0-4c00-4aae-a91c-d1744712bc5c
@@ -24,6 +26,8 @@ code: |
   import pandas as pd
   s = pd.Series()
   s
+--- |
+  If we pass data but no index to [pandas.Series](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html#pandas.Series), Pandas automatically generates `rangeindex` having values (0, len(data)-1)
 ---
 type: live-code
 id: 4ebeecd3-c151-4567-8368-6ca9d7a04cdb
@@ -33,6 +37,8 @@ code: |
   # Series from a Numpy array
   s = pd.Series(data = np.random.randn(4))
   s
+--- |
+  When a Series is created by passing data and index, it is important that the length of the two match to avoid ValueError.
 ---
 type: live-code
 id: 7307313d-4e66-436e-83a6-72c01f946d9a
@@ -72,12 +78,13 @@ code: |
   * Pandas Series
 
   #### Index
-  Index works in similar way as that in Series and should be of hashable type like integers, strings, floating point numbers, tuples etc. Pandas automatically generates `integer index` having values (0, len(data)-1) if no index is specified. Since Dataframe is 2 dimensional data structure, there are two levels of axis labels. Index is referred to as axis 0.
-  
+  Index works in similar way as that in Series and should be of hashable type like integers, strings, floating point numbers, tuples etc. Pandas automatically generates `rangeindex` having values (0, len(data)-1) if no index is specified. Since Dataframe is 2 dimensional data structure, there are two levels of axis labels. Index is referred to as axis 0.
+
   #### Columns
   The second level of axis labels in Dataframe called columns. They are referred to as axis 1.
 
-  The basic method to create a Series is to call [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html). The default setting for data and index parameters is None and will create an empty dataframe. If we pass data without index and columns to [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html), Pandas automatically generates `integer index` having values (0, len(data axis 0)-1) and column names having values (0, len(data axis 1)-1).
+  #### Creating DataFrame
+  The basic method to create a DataFrame is [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html). The default setting for data and index parameters is None and will create an empty dataframe. If we pass data without index and columns to [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html), Pandas automatically generates `rangeindex` having values (0, len(data axis 0)-1) and column names having values (0, len(data axis 1)-1).
 ---
 type: live-code
 id: c9d5fd2c-189f-4ca7-be59-61c8690d11ec
@@ -99,7 +106,7 @@ code: |
   df = pd.DataFrame(data = {'col1':[1,2,3,4], 'col2':['a', 'b', 'c', 'd']})
   df
 --- |
-  A Dataframe can also be created from Pandas Series. They can be passed as dictionary `column name` as keys and `series` as values.
+  A Dataframe can also be created from Pandas Series. They can be passed as dictionary `column name` as keys and `Series` as values.
 ---
 type: live-code
 id: fadb5657-7419-4099-afb7-ebee49bfd941
