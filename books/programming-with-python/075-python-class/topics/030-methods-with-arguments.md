@@ -49,6 +49,7 @@ question: |
 code: |
   # your code goes here
 tests: |
+  c = Counter()
   assert c.increment(2) == 2
   assert c.increment() == 3
   assert c.decrement(2) == 1
