@@ -49,7 +49,7 @@ code: |
 
 tests: |
   assert r.length == 8
-  assert r.width = 4.
+  assert r.width == 4
 
 ---
 type: coding-question
@@ -73,4 +73,4 @@ code: |
 tests: |
   s = Subject(name='Defense against the dark arts', teacher='Snape')
   assert s.name == 'Defense against the dark arts'
-  assert s.teacher = 'Snape'
+  assert s.teacher == 'Snape'
